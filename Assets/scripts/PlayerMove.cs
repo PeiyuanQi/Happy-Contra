@@ -45,8 +45,7 @@ public class PlayerMove : MonoBehaviour {
     }
     void flipPlayer()
     {
-        Vector3 scale= new Vector3(-gameObject.transform.localScale.x, gameObject.transform.localScale.y, gameObject.transform.localScale.z);
-        gameObject.transform.localScale = scale;
+        transform.Rotate(0f, 180f, 0f);
         faceRight = !faceRight;
     }
     void jump()
