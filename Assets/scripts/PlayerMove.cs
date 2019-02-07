@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour {
     private float speed = 10f;
-    private float jumpheight = 1500f;
+    private float jumpHeight = 1500f;
     private float moveX;
-    private bool isground = false;
+    private bool isGround = false;
     private bool faceRight = true;
 	// Use this for initialization
 	void Start () {
@@ -15,18 +15,18 @@ public class PlayerMove : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Playermove();
-        jumpcheck();
+        Moving();
+        JumpCheck();
 	}
-    void Playermove()
+    void Moving()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         { 
             if (Input.GetKey(KeyCode.S))
             {
-                downJump();
+                DownJump();
             }
-            else jump();
+            else Jump();
         }
         /*else if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -35,39 +35,39 @@ public class PlayerMove : MonoBehaviour {
         moveX = Input.GetAxis("Horizontal");
         if (moveX < 0f && faceRight==true)
         {
-            flipPlayer();
+            FlipPlayer();
         }
         if (moveX > 0f && faceRight == false)
         {
-            flipPlayer();
+            FlipPlayer();
         }
         gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(moveX * speed, gameObject.GetComponent<Rigidbody2D>().velocity.y);
     }
-    void flipPlayer()
+    void FlipPlayer()
     {
         transform.Rotate(0f, 180f, 0f);
         faceRight = !faceRight;
     }
-    void jump()
+    void Jump()
     {
-        if (isground)
+        if (isGround)
         {
-            gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * jumpheight);
-            isground = false;
+            gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * jumpHeight);
+            isGround = false;
         }
     }
-    void downJump()
+    void DownJump()
     {
         RaycastHit2D hit = Physics2D.Raycast(this.transform.position, Vector2.down, 1.0f, 1 << LayerMask.NameToLayer("floor"));
         if (hit)
         {
             hit.collider.isTrigger = true;
         }
-        isground = false;
+        isGround = false;
     }
-    void jumpcheck()
+    void JumpCheck()
     {
-        if (!isground && gameObject.GetComponent<Rigidbody2D>().velocity.y>0)
+        if (!isGround && gameObject.GetComponent<Rigidbody2D>().velocity.y>0)
         {
             RaycastHit2D hit = Physics2D.Raycast(this.transform.position, Vector2.up, 1.0f, 1 << LayerMask.NameToLayer("floor"));
             if (hit)
@@ -82,7 +82,7 @@ public class PlayerMove : MonoBehaviour {
         {
             if (collision.gameObject.transform.position.y < gameObject.transform.position.y)
             {
-                isground = true;
+                isGround = true;
                 //collision.gameObject.GetComponent<BoxCollider2D>().isTrigger = false;
             }
             else
