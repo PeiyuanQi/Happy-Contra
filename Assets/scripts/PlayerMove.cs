@@ -124,6 +124,13 @@ public class PlayerMove : MonoBehaviour {
 
         }
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag=="Trap")
+        {
+            hasDied = true;
+        }
+    }
     public void Die()
     {
         hasDied = true;
