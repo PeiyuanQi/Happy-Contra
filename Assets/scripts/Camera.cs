@@ -9,6 +9,7 @@ public class Camera : MonoBehaviour {
     public float xmax;
     public float ymin;
     public float ymax;
+    public int cameraEdge = 7;
     // Use this for initialization
     private void Awake()
     {
@@ -38,10 +39,11 @@ public class Camera : MonoBehaviour {
     }
     public bool InRange(float x)
     {
-        return (gameObject.transform.position.x - 6 <= x && gameObject.transform.position.x + 6 >= x);
+        return (gameObject.transform.position.x - cameraEdge <= x && 
+                gameObject.transform.position.x + cameraEdge >= x);
     }
     public bool RightOutOfRange(float x)
     {
-        return (gameObject.transform.position.x + 6 < x);
+        return (gameObject.transform.position.x + cameraEdge < x);
     }
 }

@@ -362,6 +362,7 @@ GameObject:
   - component: {fileID: 311893734}
   - component: {fileID: 311893733}
   - component: {fileID: 311893736}
+  - component: {fileID: 311893737}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -378,7 +379,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -447,7 +448,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 311893732}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.13, y: 1.19, z: 0.0051716845}
+  m_LocalPosition: {x: 4.74, y: 4.4, z: 0.0051716845}
   m_LocalScale: {x: 8.524877, y: 9.624555, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -468,6 +469,26 @@ MonoBehaviour:
   damage: 50
   deathEffect: {fileID: 0}
   start: {fileID: 0}
+--- !u!50 &311893737
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 311893732}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -509,6 +530,7 @@ MonoBehaviour:
   xmax: 5
   ymin: -10
   ymax: 10
+  cameraEdge: 8
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -533,7 +555,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 3.3211823
+  orthographic size: 5.35
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
