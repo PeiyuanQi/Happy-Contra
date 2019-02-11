@@ -29,6 +29,12 @@ public class Bullet : MonoBehaviour {
             enemy.TakeDamage(damage);
         }
         Destroy(gameObject);
+        PowerUpBlimp Blimp = hitInfo.GetComponent<PowerUpBlimp>();
+        if (Blimp != null)
+        {
+            Blimp.TakeDamage(damage);
+        }
+        Destroy(gameObject);
     }
 
 }
