@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMove : MonoBehaviour {
     private float speed = 10f;
@@ -8,16 +9,27 @@ public class PlayerMove : MonoBehaviour {
     private float moveX;
     private bool isGround = false;
     private bool faceRight = true;
-	// Use this for initialization
-	void Start () {
-		
-	}
+
+    private bool hasDied = false;
+
+    // Use this for initialization
+    void Start () {
+        hasDied = false;
+    }
 	
 	// Update is called once per frame
 	void Update () {
         Moving();
         JumpCheck();
-	}
+        if (transform.position.y < -5)
+        {
+            hasDied = true;
+        }
+        if (hasDied == true)
+        {
+            StartCoroutine("ToStart");
+        }
+    }
     void Moving()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -94,12 +106,22 @@ public class PlayerMove : MonoBehaviour {
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        collision.gameObject.GetComponent<BoxCollider2D>().isTrigger = false;
+        //collision.gameObject.GetComponent<BoxCollider2D>().isTrigger = false;
         /*if (collision.gameObject.transform.position.y < gameObject.transform.position.y)
         {
             collision.gameObject.GetComponent<BoxCollider2D>().isTrigger = false;
         }*/
             
     }
-    
+    public void Die()
+    {
+        hasDied = true;
+    }
+    public IEnumerator ToStart()
+    {
+        SceneManager.LoadScene("SampleScene");
+        //yield return new WaitForEndOfFrame();
+        yield return new WaitForSeconds(2);
+        hasDied = false;
+    }
 }
