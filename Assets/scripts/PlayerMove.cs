@@ -102,7 +102,15 @@ public class PlayerMove : MonoBehaviour {
                 //collision.gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
                 //Debug.Log("HIIIIIIIIIIIIIIT");
             }
-        }    
+        }
+        else if (collision.gameObject.tag == "Trap")
+        {
+            hasDied = true;
+        }
+        if (hasDied == true)
+        {
+            StartCoroutine("ToStart");
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
