@@ -28,6 +28,10 @@ public class Camera : MonoBehaviour {
 	
 	// Update is called once per frame
 	void LateUpdate () {
+        if (player == null)
+        {
+            player = GameObject.FindGameObjectWithTag("Player");
+        }
         float x = Mathf.Clamp(player.transform.position.x, xmin, xmax);
         float y = Mathf.Clamp(player.transform.position.y, ymin, ymax);
         gameObject.transform.position = new Vector3(x, y, gameObject.transform.position.z);
@@ -35,5 +39,9 @@ public class Camera : MonoBehaviour {
     public bool InRange(float x)
     {
         return (gameObject.transform.position.x - 6 <= x && gameObject.transform.position.x + 6 >= x);
+    }
+    public bool RightOutOfRange(float x)
+    {
+        return (gameObject.transform.position.x + 6 < x);
     }
 }
