@@ -106,12 +106,15 @@ public class PlayerMove : MonoBehaviour {
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        //collision.gameObject.GetComponent<BoxCollider2D>().isTrigger = false;
-        /*if (collision.gameObject.transform.position.y < gameObject.transform.position.y)
+        if (collision.gameObject.tag == "ground")
         {
             collision.gameObject.GetComponent<BoxCollider2D>().isTrigger = false;
-        }*/
-            
+            /*if (collision.gameObject.transform.position.y < gameObject.transform.position.y)
+            {
+                collision.gameObject.GetComponent<BoxCollider2D>().isTrigger = false;
+            }*/
+
+        }
     }
     public void Die()
     {
