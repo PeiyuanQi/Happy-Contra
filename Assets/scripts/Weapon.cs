@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour {
 
-    public Transform firePoint;
+    private Transform firePoint;
     public GameObject bulletPrefab;
+    private PlayerMove PM;
     public float shootRate = 5;  //表示每秒发射子弹的个数 俗称子弹的发射速率
 
     private float shootTimer = 0;  //表示子弹的生成时间间隔 用来控制子弹的发射间隔
@@ -14,6 +15,7 @@ public class Weapon : MonoBehaviour {
 
     private void Start()
     {
+        PM = GameObject.Find("Player").GetComponent<PlayerMove>();
         shootTimerInterval = 1 / shootRate;
     }
 
@@ -38,6 +40,7 @@ public class Weapon : MonoBehaviour {
 
     void Shoot()
     {
+        firePoint = PM.GetFirePoint();
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
     }
 }

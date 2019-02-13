@@ -7,15 +7,19 @@ public class Bullet : MonoBehaviour {
     public float speed = 20;
     public int damage = 40;
     public Rigidbody2D rb;
+    public PlayerMove PM;
 
 	// Use this for initialization
 	void Start () {
-        rb.velocity = transform.right * speed;
-	}
+        //rb.velocity = transform.right * speed;
+        PM= GameObject.Find("Player").GetComponent<PlayerMove>();
+        Vector2 dir = PM.GetShootDirection();
+        rb.velocity = dir*speed;
+    }
 
     private void Update()
     {
-        if (!Camera.Instance.InRange(gameObject.transform.position.x))
+        if (!Camera.Instance.InRange(gameObject.transform.position.x, gameObject.transform.position.y))
         {
             Destroy(gameObject);
         }
@@ -27,14 +31,16 @@ public class Bullet : MonoBehaviour {
         if (enemy != null)
         {
             enemy.TakeDamage(damage);
+            Destroy(gameObject);
         }
-        Destroy(gameObject);
+        
         PowerUpBlimp Blimp = hitInfo.GetComponent<PowerUpBlimp>();
         if (Blimp != null)
         {
             Blimp.TakeDamage(damage);
+            Destroy(gameObject);
         }
-        Destroy(gameObject);
+        
     }
 
 }

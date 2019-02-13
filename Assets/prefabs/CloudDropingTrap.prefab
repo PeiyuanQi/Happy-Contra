@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212133258571901122}
   - component: {fileID: 61350496370657192}
   - component: {fileID: 50442632494315770}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CloudDropingTrap
   m_TagString: Trap
   m_Icon: {fileID: 0}
