@@ -78,8 +78,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7438913440fc847eba9afe55e049b673, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
-  damage: 50
+  health: 20
+  damage: 100
   deathEffect: {fileID: 0}
   start: {fileID: 0}
   speed: 0
