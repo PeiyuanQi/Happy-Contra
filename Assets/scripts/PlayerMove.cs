@@ -192,7 +192,16 @@ public class PlayerMove : MonoBehaviour {
             RaycastHit2D hit = Physics2D.Raycast(this.transform.position, Vector2.up, 1.0f, 1 << LayerMask.NameToLayer("floor"));
             if (hit)
             {
-                hit.collider.isTrigger = true;
+                if (hit.collider.tag == "QuestionBlock")
+                {
+                    // Check if hit a question block
+                    hit.collider.GetComponent<QuestionBlock>().QuestionBlockBounce();
+                } else
+                {
+                    // Check if Player could go through block
+                    hit.collider.isTrigger = true;
+                }
+
             }
         }
     }
