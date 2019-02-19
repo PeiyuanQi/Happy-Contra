@@ -10,7 +10,8 @@ public class Camera : MonoBehaviour {
     public float ymin;
     public float ymax;
     public float CameraCenterVerticalOffset;
-    public int cameraEdge = 7;
+    public int cameraEdgeX;
+    public int cameraEdgeY;
     // Use this for initialization
     private void Awake()
     {
@@ -38,13 +39,15 @@ public class Camera : MonoBehaviour {
         float y = Mathf.Clamp(player.transform.position.y + CameraCenterVerticalOffset, ymin, ymax);
         gameObject.transform.position = new Vector3(x, y, gameObject.transform.position.z);
     }
-    public bool InRange(float x)
+    public bool InRange(float x, float y)
     {
-        return (gameObject.transform.position.x - cameraEdge <= x && 
-                gameObject.transform.position.x + cameraEdge >= x);
+        return (gameObject.transform.position.x - cameraEdgeX <= x && 
+                gameObject.transform.position.x + cameraEdgeX >= x && 
+                gameObject.transform.position.y - cameraEdgeY <= y &&
+                gameObject.transform.position.y + cameraEdgeY >= y);
     }
     public bool RightOutOfRange(float x)
     {
-        return (gameObject.transform.position.x + cameraEdge < x);
+        return (gameObject.transform.position.x + cameraEdgeX < x);
     }
 }
