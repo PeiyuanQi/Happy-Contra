@@ -35,9 +35,13 @@ public class Camera : MonoBehaviour {
         {
             player = GameObject.FindGameObjectWithTag("Player");
         }
-        float x = Mathf.Clamp(player.transform.position.x, xmin, xmax);
-        float y = Mathf.Clamp(player.transform.position.y + CameraCenterVerticalOffset, ymin, ymax);
-        gameObject.transform.position = new Vector3(x, y, gameObject.transform.position.z);
+        if (player)
+        {
+            float x = Mathf.Clamp(player.transform.position.x, xmin, xmax);
+            float y = Mathf.Clamp(player.transform.position.y + CameraCenterVerticalOffset, ymin, ymax);
+            gameObject.transform.position = new Vector3(x, y, gameObject.transform.position.z);
+        }
+        
     }
     public bool InRange(float x, float y)
     {

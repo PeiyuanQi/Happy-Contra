@@ -55,7 +55,7 @@ public class PlayerMove : MonoBehaviour {
         }
         if (hasDied == true)
         {
-            StartCoroutine("ToStart");
+            StartCoroutine(ToStart());
         }
     }
     private void LateUpdate()
@@ -209,7 +209,7 @@ public class PlayerMove : MonoBehaviour {
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag=="ground")
+        if (collision.gameObject.tag=="ground" || collision.gameObject.tag == "QuestionBlock")
         {
             if (collision.gameObject.transform.position.y < gameObject.transform.position.y)
             {
@@ -245,9 +245,9 @@ public class PlayerMove : MonoBehaviour {
     }
     public IEnumerator ToStart()
     {
-        SceneManager.LoadScene("SampleScene");
-        //yield return new WaitForEndOfFrame();
-        yield return new WaitForSeconds(2);
         hasDied = false;
+        SceneManager.LoadScene("DeathScene");
+        yield return new WaitForSeconds(2);
+        //SceneManager.LoadScene("SampleScene");
     }
 }

@@ -367,6 +367,7 @@ MonoBehaviour:
   firepoint_upperleft: {fileID: 4443556815926732}
   firepoint_lowerright: {fileID: 4720468137229602}
   firepoint_lowerleft: {fileID: 4857672030276522}
+  spawnPoint: {fileID: 0}
 --- !u!212 &212799237691243574
 SpriteRenderer:
   m_ObjectHideFlags: 1
