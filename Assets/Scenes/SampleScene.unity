@@ -578,23 +578,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &596181633 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1784548801124312, guid: 728bec78ad247e04fbde091697f35081,
-    type: 2}
-  m_PrefabInternal: {fileID: 2068052596}
---- !u!114 &596181640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 596181633}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5de4d3f13d7b64305958469981f5ccef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
 --- !u!1001 &658983501
 Prefab:
   m_ObjectHideFlags: 0
@@ -633,11 +616,6 @@ Prefab:
     - target: {fileID: 4638849488779226, guid: cccb0bdd7cde148ecb1dbd7df018c087, type: 2}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114162228101631594, guid: cccb0bdd7cde148ecb1dbd7df018c087,
-        type: 2}
-      propertyPath: CameraCenterVerticalOffset
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cccb0bdd7cde148ecb1dbd7df018c087, type: 2}

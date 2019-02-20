@@ -190,6 +190,8 @@ public class PlayerMove : MonoBehaviour {
         if (!isGround && gameObject.GetComponent<Rigidbody2D>().velocity.y>0)
         {
             RaycastHit2D hit = Physics2D.Raycast(this.transform.position, Vector2.up, 1.0f, 1 << LayerMask.NameToLayer("floor"));
+            if (!hit) hit = Physics2D.Raycast(this.transform.position, Vector2.left, 1.0f, 1 << LayerMask.NameToLayer("floor"));
+            if (!hit) hit = Physics2D.Raycast(this.transform.position, Vector2.right, 1.0f, 1 << LayerMask.NameToLayer("floor"));
             if (hit)
             {
                 if (hit.collider.tag == "QuestionBlock")
