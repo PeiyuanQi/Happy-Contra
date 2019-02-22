@@ -22,7 +22,7 @@ public class Enemy : MonoBehaviour {
 
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnCollisionEnter2D(Collision2D other)
     {
         if (other.tag == "Player")
         {
@@ -31,15 +31,16 @@ public class Enemy : MonoBehaviour {
             {
                 playerLife.TakeDamage(damage);
             }
+            Destroy(gameObject);
         }
     }
 
-    void OnTriggerExit2D(Collider2D other)
+    void OnCollisionExit2D(Collision2D other)
     {
 
     }
 
-        public void TakeDamage (int damage)
+    public void TakeDamage (int damage)
     {
         health -= damage;
         if (health <= 0)
