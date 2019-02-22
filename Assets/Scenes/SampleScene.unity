@@ -1038,7 +1038,7 @@ MonoBehaviour:
   bridge4: {fileID: 22608773}
   player: {fileID: 873053809}
   bridgeActivator: {fileID: 1128232995}
-  bridgeExplosionPrefab: {fileID: 1724669338322970, guid: ff292739271a844a59eaf0bd7330b0af,
+  bridgeExplosionPrefab: {fileID: 1143380514835206, guid: 483941a2787cc416a8427bd5122eb2f7,
     type: 2}
   exist: 0
 --- !u!1 &1159566582
