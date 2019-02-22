@@ -54,4 +54,8 @@ public class Camera : MonoBehaviour {
     {
         return (gameObject.transform.position.x + cameraEdgeX < x);
     }
+    public bool LeftOutOfRange(float x)
+    {
+        return (gameObject.transform.position.x - cameraEdgeX > x);
+    }
 }

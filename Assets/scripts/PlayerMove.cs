@@ -220,6 +220,10 @@ public class PlayerMove : MonoBehaviour {
         {
             //hasDied = true;
         }
+        else if (collision.gameObject.tag == "Enemy")
+        {
+            hasDied = true;
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {

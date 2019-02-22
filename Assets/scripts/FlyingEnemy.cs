@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//向右移动的敌人
-public class MovingEnemy : Enemy {
+//向左移动的敌人
+public class FlyingEnemy : Enemy {
 
     public float speed;
     //private float currentposx;
@@ -19,9 +19,9 @@ public class MovingEnemy : Enemy {
 
     void Update()
     {
-        transform.Translate(Vector2.right * speed);
-        //如果在摄像机画面右侧 -> 消失
-        if (Camera.Instance.RightOutOfRange(gameObject.transform.position.x))
+        transform.Translate(Vector2.left * speed);
+        //如果在摄像机画面左侧 -> 消失
+        if (Camera.Instance.LeftOutOfRange(gameObject.transform.position.x))
         {
             Destroy(gameObject);
         }
