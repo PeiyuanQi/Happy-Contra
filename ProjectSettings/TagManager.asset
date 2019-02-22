@@ -9,6 +9,7 @@ TagManager:
   - Trap
   - Trigger
   - QuestionBlock
+  - Explosion
   layers:
   - Default
   - TransparentFX
