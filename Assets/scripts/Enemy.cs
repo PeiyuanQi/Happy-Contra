@@ -24,9 +24,9 @@ public class Enemy : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
-            PlayerLife playerLife = other.GetComponent<PlayerLife>();
+            PlayerLife playerLife = other.gameObject.GetComponent<PlayerLife>();
             if (playerLife != null)
             {
                 playerLife.TakeDamage(damage);
