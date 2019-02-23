@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MovingTrap : MonoBehaviour {
     public int XMoveDirection;
+    public int XMin, XMax;
     // Use this for initialization
     void Start()
     {
@@ -15,7 +16,7 @@ public class MovingTrap : MonoBehaviour {
     {
         Vector3 move = new Vector3(XMoveDirection, 0, 0);
         gameObject.transform.Translate(move * Time.deltaTime);
-        if (gameObject.transform.position.x > 10 || gameObject.transform.position.x < 5)
+        if (gameObject.transform.position.x > XMax || gameObject.transform.position.x < XMin)
         {
             XMoveDirection = -XMoveDirection;
         }
