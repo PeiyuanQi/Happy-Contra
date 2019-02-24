@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MovingTrap : MonoBehaviour {
     public int XMoveDirection;
-    public int XMin, XMax;
+    public float XMin, XMax;
     // Use this for initialization
     void Start()
     {
