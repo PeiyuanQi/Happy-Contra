@@ -23,10 +23,20 @@ public class PowerUp : MonoBehaviour
         {
             Destroy(this.gameObject);
 
-            Weapon wp = col.gameObject.GetComponent(typeof(Weapon))as Weapon;
-            if (wp != null) {
+            // original power up
+            //Weapon wp = col.gameObject.GetComponent(typeof(Weapon))as Weapon;
+            //if (wp != null) {
 
-                wp.bulletPrefab = bullet_B;
+            //    wp.bulletPrefab = bullet_B;
+
+            //}
+
+            // or a trap
+            int damage = 120;
+            PlayerLife playerLife = col.gameObject.GetComponent<PlayerLife>();
+            if (playerLife != null)
+            {
+                playerLife.TakeDamage(damage);
             }
 
         }
