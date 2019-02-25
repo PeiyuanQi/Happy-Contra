@@ -6,13 +6,11 @@ public class PowerUpBlimp : MonoBehaviour
 
     public int health = 50;
     public char gun;
-    public GameObject powerUp;
-
     float t = 0;
     public float freq = 10;
     public float yi = 4;
     public float xSpeed = 2f;
-    public GameObject deathEffect;
+    public GameObject Update_B;
     // Use this for initialization
     void Start()
     {
@@ -42,7 +40,10 @@ public class PowerUpBlimp : MonoBehaviour
     }
     void Die()
     {
-        Destroy(gameObject);
+
         // 添加触发后的事件，奖励等
+        Destroy(gameObject);
+        // 创建GameObject对象
+        GameObject exp = Instantiate(Update_B, transform.position, Quaternion.identity);
     }
 }

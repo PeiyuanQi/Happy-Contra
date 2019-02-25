@@ -9,47 +9,47 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1964251909398526}
+  m_RootGameObject: {fileID: 1567025043229096}
   m_IsPrefabAsset: 1
---- !u!1 &1964251909398526
+--- !u!1 &1567025043229096
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4311205447536082}
-  - component: {fileID: 212540488451465010}
-  - component: {fileID: 50641952065007238}
-  - component: {fileID: 58213312443421950}
-  - component: {fileID: 114993260395751688}
+  - component: {fileID: 4262393918672664}
+  - component: {fileID: 212117094916364250}
+  - component: {fileID: 58290108510585168}
+  - component: {fileID: 114353894804980784}
+  - component: {fileID: 50538935130282852}
   m_Layer: 0
-  m_Name: Bullet
+  m_Name: Bullet_B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4311205447536082
+--- !u!4 &4262393918672664
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1964251909398526}
+  m_GameObject: {fileID: 1567025043229096}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.79553, y: 3.83447, z: -0.03992}
-  m_LocalScale: {x: 2.6605647, y: 2.6605647, z: 2.6605647}
+  m_LocalPosition: {x: 14.344059, y: 3.654, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50641952065007238
+--- !u!50 &50538935130282852
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1964251909398526}
+  m_GameObject: {fileID: 1567025043229096}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -63,12 +63,12 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!58 &58213312443421950
+--- !u!58 &58290108510585168
 CircleCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1964251909398526}
+  m_GameObject: {fileID: 1567025043229096}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -77,28 +77,28 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.025
---- !u!114 &114993260395751688
+  m_Radius: 0.04
+--- !u!114 &114353894804980784
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1964251909398526}
+  m_GameObject: {fileID: 1567025043229096}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 864ddc3977cb04b07a7a3c227f67c775, type: 3}
+  m_Script: {fileID: 11500000, guid: 9c81127756b44497a8e1777a94fd3b52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
-  damage: 40
-  rb: {fileID: 50641952065007238}
+  speed: 30
+  damage: 100
+  rb: {fileID: 50538935130282852}
   PM: {fileID: 0}
---- !u!212 &212540488451465010
+--- !u!212 &212117094916364250
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1964251909398526}
+  m_GameObject: {fileID: 1567025043229096}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -128,12 +128,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300186, guid: 168639c38dc778a4286d9b3c192f379b, type: 3}
+  m_Sprite: {fileID: 21300188, guid: 168639c38dc778a4286d9b3c192f379b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.05, y: 0.05}
+  m_Size: {x: 0.08, y: 0.08}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
