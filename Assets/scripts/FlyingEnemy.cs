@@ -23,6 +23,10 @@ public class FlyingEnemy : Enemy {
         //如果在摄像机画面左侧 -> 消失
         if (Camera.Instance.LeftOutOfRange(gameObject.transform.position.x))
         {
+            Debug.Log("fly destroyed");
+            Debug.Log(Camera.Instance.transform.position);
+
+
             Destroy(gameObject);
         }
     }

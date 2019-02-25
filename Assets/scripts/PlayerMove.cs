@@ -14,6 +14,7 @@ public class PlayerMove : MonoBehaviour {
     private float moveY;
     private bool isGround = false;
     private bool faceRight = true;
+    private Vector3 initPos;
 
     private bool hasDied = false;
     private SpriteRenderer spr;
@@ -43,6 +44,7 @@ public class PlayerMove : MonoBehaviour {
     void Start () {
         hasDied = false;
         spr = gameObject.GetComponent<SpriteRenderer>();
+        initPos = gameObject.transform.position;
     }
 	
 	// Update is called once per frame
@@ -178,7 +180,7 @@ public class PlayerMove : MonoBehaviour {
     }
     void DownJump()
     {
-        RaycastHit2D hit = Physics2D.Raycast(this.transform.position, Vector2.down, 1.0f, 1 << LayerMask.NameToLayer("floor"));
+        RaycastHit2D hit = Physics2D.Raycast(this.transform.position, Vector2.down, 1.0f, 1 << LayerMask.NameToLayer("Floor"));
         if (hit)
         {
             hit.collider.isTrigger = true;
@@ -189,9 +191,9 @@ public class PlayerMove : MonoBehaviour {
     {
         if (!isGround && gameObject.GetComponent<Rigidbody2D>().velocity.y>0)
         {
-            RaycastHit2D hit = Physics2D.Raycast(this.transform.position, Vector2.up, 1.0f, 1 << LayerMask.NameToLayer("floor"));
-            if (!hit) hit = Physics2D.Raycast(this.transform.position, Vector2.left, 1.0f, 1 << LayerMask.NameToLayer("floor"));
-            if (!hit) hit = Physics2D.Raycast(this.transform.position, Vector2.right, 1.0f, 1 << LayerMask.NameToLayer("floor"));
+            RaycastHit2D hit = Physics2D.Raycast(this.transform.position, Vector2.up, 1.0f, 1 << LayerMask.NameToLayer("Floor"));
+            if (!hit) hit = Physics2D.Raycast(this.transform.position, Vector2.left, 1.0f, 1 << LayerMask.NameToLayer("Floor"));
+            if (!hit) hit = Physics2D.Raycast(this.transform.position, Vector2.right, 1.0f, 1 << LayerMask.NameToLayer("Floor"));
             if (hit)
             {
                 if (hit.collider.tag == "QuestionBlock")
@@ -250,6 +252,7 @@ public class PlayerMove : MonoBehaviour {
     public IEnumerator ToStart()
     {
         hasDied = false;
+        gameObject.transform.position = initPos;
         SceneManager.LoadScene("DeathScene");
         yield return new WaitForSeconds(2);
         //SceneManager.LoadScene("SampleScene");

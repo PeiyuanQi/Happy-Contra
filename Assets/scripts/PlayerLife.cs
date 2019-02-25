@@ -30,7 +30,6 @@ public class PlayerLife : MonoBehaviour {
 
     void Die()
     {
-        Debug.Log("Player Die");
         playerMove.Die();
     }
 
