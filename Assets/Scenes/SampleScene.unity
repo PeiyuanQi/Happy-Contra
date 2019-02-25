@@ -605,6 +605,10 @@ Prefab:
       propertyPath: m_Size.x
       value: 0.25135088
       objectReference: {fileID: 0}
+    - target: {fileID: 1859704674503292, guid: e3aff0eb58d6d415a94e9de56464d293, type: 2}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3aff0eb58d6d415a94e9de56464d293, type: 2}
   m_IsPrefabAsset: 0
@@ -991,7 +995,7 @@ GameObject:
   - component: {fileID: 1026891944}
   - component: {fileID: 1026891943}
   - component: {fileID: 1026891942}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: TrapTrigger
   m_TagString: Trigger
   m_Icon: {fileID: 0}
@@ -1320,6 +1324,10 @@ Prefab:
     - target: {fileID: 4083782198746434, guid: 14d01bf21e112424ba79fe3973eb94b8, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332136087303912, guid: 14d01bf21e112424ba79fe3973eb94b8, type: 2}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14d01bf21e112424ba79fe3973eb94b8, type: 2}
