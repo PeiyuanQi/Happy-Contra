@@ -44,6 +44,6 @@ public class PowerUpBlimp : MonoBehaviour
         // 添加触发后的事件，奖励等
         Destroy(gameObject);
         // 创建GameObject对象
-        GameObject exp = Instantiate(Update_B, transform.position, Quaternion.identity);
+        Instantiate(Update_B, transform.position, Quaternion.identity);
     }
 }
