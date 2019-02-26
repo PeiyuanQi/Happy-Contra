@@ -10,6 +10,7 @@ TagManager:
   - Trigger
   - QuestionBlock
   - Explosion
+  - TrapQuestionBlock
   layers:
   - Default
   - TransparentFX
@@ -23,7 +24,7 @@ TagManager:
   - Floor
   - Trigger
   - Enemy
-  - 
+  - Blimp
   - 
   - 
   - 
