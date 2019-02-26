@@ -34,13 +34,27 @@ public class Bullet : MonoBehaviour {
             Destroy(gameObject);
         }
         
-        PowerUpBlimp Blimp = hitInfo.GetComponent<PowerUpBlimp>();
-        if (Blimp != null)
+        PowerUpBlimp blimp = hitInfo.GetComponent<PowerUpBlimp>();
+        if (blimp != null)
         {
-            Blimp.TakeDamage(damage);
+            blimp.TakeDamage(damage);
             Destroy(gameObject);
         }
-        
+
+        MonsterBlock mBlock = hitInfo.GetComponent<MonsterBlock>();
+        if (mBlock != null)
+        {
+            mBlock.TakeDamage(damage);
+            Destroy(gameObject);
+        }
+
+        Monster monster = hitInfo.GetComponent<Monster>();
+        if (monster != null)
+        {
+            monster.TakeDamage(damage);
+            Destroy(gameObject);
+        }
+
     }
 
 }
