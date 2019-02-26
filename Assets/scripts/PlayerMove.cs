@@ -198,8 +198,13 @@ public class PlayerMove : MonoBehaviour {
             {
                 if (hit.collider.tag == "QuestionBlock")
                 {
+                    Debug.Log(hit.collider.GetComponent<TrapQuestionBlock>());
+
                     // Check if hit a question block
                     hit.collider.GetComponent<QuestionBlock>().QuestionBlockBounce();
+                } else if (hit.collider.tag == "TrapQuestionBlock") {
+                    Debug.Log(hit.collider.GetComponent<TrapQuestionBlock>());
+                    hit.collider.GetComponent<TrapQuestionBlock>().QuestionBlockBounce();
                 } else
                 {
                     // Check if Player could go through block

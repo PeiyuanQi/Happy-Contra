@@ -15,7 +15,6 @@ public class Monster : MonoBehaviour {
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");//找到tag为player的对象
-        target = player.transform;
     }
 
     void Update()
