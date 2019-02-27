@@ -29,6 +29,8 @@ public class PlayerMove : MonoBehaviour {
     private Transform firePoint;
     private Direction dire;
 
+    public int minYOfMap = -15;
+
     enum Direction
     {
         Right,
@@ -51,7 +53,7 @@ public class PlayerMove : MonoBehaviour {
 	void Update () {
         Moving();
         JumpCheck();
-        if (transform.position.y < -5)
+        if (transform.position.y < minYOfMap)
         {
             hasDied = true;
         }
