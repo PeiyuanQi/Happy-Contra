@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4929257316864274}
   - component: {fileID: 212195928863692606}
-  - component: {fileID: 114214177730785178}
   - component: {fileID: 61498801807932654}
   - component: {fileID: 114720989952472164}
   m_Layer: 0
@@ -37,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1989092629195738}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.42, y: 1.44, z: 0}
+  m_LocalPosition: {x: 44.49, y: 0.59, z: 0}
   m_LocalScale: {x: 0.23481898, y: 0.23481898, z: 0.234819}
   m_Children: []
   m_Father: {fileID: 0}
@@ -68,18 +67,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.52, y: 4.52}
   m_EdgeRadius: 0
---- !u!114 &114214177730785178
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1989092629195738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f48aab63397f0445afa5967161c9233, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mBlockHealth: 50
 --- !u!114 &114720989952472164
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -91,7 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25d007366a9ce9c449e5695984f011dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mBlockHealth: 50
+  mBlockHealth: 20
   monsterPrefab: {fileID: 1884791587134374, guid: 88276e39b377ea142b63e3647426c227,
     type: 2}
 --- !u!212 &212195928863692606
