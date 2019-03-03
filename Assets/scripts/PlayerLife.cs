@@ -28,7 +28,7 @@ public class PlayerLife : MonoBehaviour {
         }
     }
 
-    void Die()
+    public void Die()
     {
         playerMove.Die();
     }
