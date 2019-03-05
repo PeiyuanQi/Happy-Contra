@@ -55,6 +55,13 @@ public class Bullet : MonoBehaviour {
             Destroy(gameObject);
         }
 
+
+        if (hitInfo.gameObject.tag == "Destructable")
+        {
+            hitInfo.gameObject.GetComponent<DamageDestructable>().TakeDamage(damage);
+            Destroy(gameObject);
+        }
+
     }
 
 }

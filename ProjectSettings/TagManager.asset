@@ -11,6 +11,9 @@ TagManager:
   - QuestionBlock
   - Explosion
   - TrapQuestionBlock
+  - Obstacle
+  - MovingPlatform
+  - Destructable
   layers:
   - Default
   - TransparentFX

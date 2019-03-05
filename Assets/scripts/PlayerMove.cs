@@ -218,7 +218,8 @@ public class PlayerMove : MonoBehaviour {
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag=="ground" || collision.gameObject.tag == "QuestionBlock")
+        if (collision.gameObject.tag=="ground" || collision.gameObject.tag == "QuestionBlock"
+            || collision.gameObject.tag == "Obstacle")
         {
             if (collision.gameObject.transform.position.y < gameObject.transform.position.y)
             {
@@ -232,6 +233,10 @@ public class PlayerMove : MonoBehaviour {
         else if (collision.gameObject.tag == "Enemy")
         {
             hasDied = true;
+        } else if (collision.gameObject.tag == "MovingPlatform")
+        {
+            GetComponent<Rigidbody2D>().isKinematic = true;
+            transform.parent = collision.transform;
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -264,4 +269,5 @@ public class PlayerMove : MonoBehaviour {
         yield return new WaitForSeconds(2);
         //SceneManager.LoadScene("SampleScene");
     }
+
 }
