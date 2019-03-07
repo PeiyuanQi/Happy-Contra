@@ -233,10 +233,6 @@ public class PlayerMove : MonoBehaviour {
         else if (collision.gameObject.tag == "Enemy")
         {
             hasDied = true;
-        } else if (collision.gameObject.tag == "MovingPlatform")
-        {
-            GetComponent<Rigidbody2D>().isKinematic = true;
-            transform.parent = collision.transform;
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
