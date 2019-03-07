@@ -14,6 +14,7 @@ public class PlayerMove : MonoBehaviour {
     private float moveY;
     private bool isGround = false;
     private bool faceRight = true;
+    private bool onWaterCube = false;
     private Vector3 initPos;
 
     private bool hasDied = false;
@@ -51,6 +52,7 @@ public class PlayerMove : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        Transfer();
         Moving();
         JumpCheck();
         if (transform.position.y < minYOfMap)
@@ -123,6 +125,16 @@ public class PlayerMove : MonoBehaviour {
     public Transform GetFirePoint()
     {
         return firePoint;
+    }
+    void Transfer()
+    {
+        if (onWaterCube)
+        {
+            if(Input.GetKeyDown(KeyCode.DownArrow))
+            {
+
+            }
+        }
     }
     void Moving()
     {
@@ -219,11 +231,16 @@ public class PlayerMove : MonoBehaviour {
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag=="ground" || collision.gameObject.tag == "QuestionBlock"
-            || collision.gameObject.tag == "Obstacle")
+            || collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "WaterCube")
         {
             if (collision.gameObject.transform.position.y < gameObject.transform.position.y)
             {
                 isGround = true;
+            }
+            if (collision.gameObject.tag == "WaterCube")
+            {
+                Debug.Log("Enter!");
+                onWaterCube = true;
             }
         }
         else if (collision.gameObject.tag == "Trap")
@@ -233,6 +250,14 @@ public class PlayerMove : MonoBehaviour {
         else if (collision.gameObject.tag == "Enemy")
         {
             hasDied = true;
+        }
+    }
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "WaterCube")
+        {
+            Debug.Log("Exit!");
+            onWaterCube = false;
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
