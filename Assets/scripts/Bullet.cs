@@ -40,7 +40,12 @@ public class Bullet : MonoBehaviour {
             blimp.TakeDamage(damage);
             Destroy(gameObject);
         }
-
+        Box box= hitInfo.GetComponent<Box>();
+        if (box != null)
+        {
+            box.TakeDamage(damage);
+            Destroy(gameObject);
+        }
         MonsterBlock mBlock = hitInfo.GetComponent<MonsterBlock>();
         if (mBlock != null)
         {
