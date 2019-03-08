@@ -60,6 +60,13 @@ public class Bullet : MonoBehaviour {
             Destroy(gameObject);
         }
 
+        Turret turret = hitInfo.GetComponent<Turret>();
+        if(turret != null)
+        {
+            turret.TakeDamage(damage);
+            Destroy(gameObject);
+        }
+
 
         if (hitInfo.gameObject.tag == "Destructable")
         {

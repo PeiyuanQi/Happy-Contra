@@ -15,6 +15,7 @@ TagManager:
   - MovingPlatform
   - Destructable
   - WaterCube
+  - Turret
   layers:
   - Default
   - TransparentFX
