@@ -52,7 +52,7 @@ public class PlayerMove : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Transfer();
+        ToTransfer();
         Moving();
         JumpCheck();
         if (transform.position.y < minYOfMap)
@@ -126,13 +126,14 @@ public class PlayerMove : MonoBehaviour {
     {
         return firePoint;
     }
-    void Transfer()
+    void ToTransfer()
     {
         if (onWaterCube)
         {
             if(Input.GetKeyDown(KeyCode.DownArrow))
             {
-
+                System.Threading.Thread.Sleep(1000);
+                StartCoroutine(Transfer());
             }
         }
     }
@@ -239,7 +240,6 @@ public class PlayerMove : MonoBehaviour {
             }
             if (collision.gameObject.tag == "WaterCube")
             {
-                Debug.Log("Enter!");
                 onWaterCube = true;
             }
         }
@@ -256,7 +256,6 @@ public class PlayerMove : MonoBehaviour {
     {
         if(collision.gameObject.tag == "WaterCube")
         {
-            Debug.Log("Exit!");
             onWaterCube = false;
         }
     }
@@ -281,6 +280,11 @@ public class PlayerMove : MonoBehaviour {
     public Vector2 GetShootDirection()
     {
         return direction;
+    }
+    public IEnumerator Transfer()
+    {
+        SceneManager.LoadScene("WaterCubeTransferScene");
+        yield return new WaitForSeconds(2);
     }
     public IEnumerator ToStart()
     {

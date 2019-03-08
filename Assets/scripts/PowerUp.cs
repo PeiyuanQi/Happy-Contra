@@ -32,6 +32,7 @@ public class PowerUp : MonoBehaviour
             //}
 
             // or a trap
+
             int damage = 120;
             PlayerLife playerLife = col.gameObject.GetComponent<PlayerLife>();
             if (playerLife != null)

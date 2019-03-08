@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DeathScene.unity
     guid: f2cbb2d2869cc02479491bf41fd08925
+  - enabled: 1
+    path: Assets/Scenes/WaterCubeTransferScene.unity
+    guid: 8ba68231c258e466eab8eb7eaae64a13
   m_configObjects: {}
