@@ -13,7 +13,6 @@ public class PlayerMove : MonoBehaviour {
     private float moveX;
     private float moveY;
     private bool isGround = false;
-    private bool isTrampoline = false;
     private bool faceRight = true;
     private bool onWaterCube = false;
     private Vector3 initPos;
