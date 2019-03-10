@@ -37,8 +37,11 @@ public class Camera : MonoBehaviour {
         }
         if (player)
         {
-            float x = Mathf.Clamp(player.transform.position.x, xmin, xmax);
-            float y = Mathf.Clamp(player.transform.position.y + CameraCenterVerticalOffset, ymin, ymax);
+            float x;
+            float y;
+            if (player.transform.position.y > 10) y = player.transform.position.y - cameraEdgeY + 1 ;
+            else y = Mathf.Clamp(player.transform.position.y + CameraCenterVerticalOffset, ymin, ymax);
+            x = Mathf.Clamp(player.transform.position.x, xmin, xmax);
             gameObject.transform.position = new Vector3(x, y, gameObject.transform.position.z);
         }
         

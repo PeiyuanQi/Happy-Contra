@@ -189,7 +189,7 @@ public class PlayerMove : MonoBehaviour {
         if (isGround)
         {
             RaycastHit2D hit = Physics2D.Raycast(this.transform.position, Vector2.down, 1.0f, 1 << LayerMask.NameToLayer("Trampoline"));
-            if (hit) gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 4 * jumpHeight);
+            if (hit) gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 2 * jumpHeight);
             else gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * jumpHeight);
             isGround = false;
             gameObject.GetComponent<SpriteRenderer>().sprite = lookUp;
