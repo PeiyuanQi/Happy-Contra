@@ -13,6 +13,7 @@ public class PlayerMove : MonoBehaviour {
     private float moveX;
     private float moveY;
     private bool isGround = false;
+    private bool isTrampoline = false;
     private bool faceRight = true;
     private bool onWaterCube = false;
     private Vector3 initPos;
@@ -188,7 +189,9 @@ public class PlayerMove : MonoBehaviour {
     {
         if (isGround)
         {
-            gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * jumpHeight);
+            RaycastHit2D hit = Physics2D.Raycast(this.transform.position, Vector2.down, 1.0f, 1 << LayerMask.NameToLayer("Trampoline"));
+            if (hit) gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 4 * jumpHeight);
+            else gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * jumpHeight);
             isGround = false;
             gameObject.GetComponent<SpriteRenderer>().sprite = lookUp;
         }
@@ -232,7 +235,7 @@ public class PlayerMove : MonoBehaviour {
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag=="ground" || collision.gameObject.tag == "QuestionBlock"
-            || collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "WaterCube")
+            || collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "WaterCube" || collision.gameObject.tag == "Trampoline")
         {
             if (collision.gameObject.transform.position.y < gameObject.transform.position.y)
             {

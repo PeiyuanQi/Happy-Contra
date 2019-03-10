@@ -16,6 +16,7 @@ TagManager:
   - Destructable
   - WaterCube
   - Turret
+  - Trampoline
   layers:
   - Default
   - TransparentFX
@@ -30,7 +31,7 @@ TagManager:
   - Trigger
   - Enemy
   - Blimp
-  - 
+  - Trampoline
   - 
   - 
   - 
