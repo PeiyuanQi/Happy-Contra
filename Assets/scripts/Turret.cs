@@ -22,6 +22,7 @@ public class Turret : MonoBehaviour {
     private double longTimer = 2;
     private double shortTimer = 0;
     private Vector2 direction;
+    private GameObject thisBullet;
 
     //for itself
     public int health = 100;
@@ -167,7 +168,9 @@ public class Turret : MonoBehaviour {
             shortTimer += Time.deltaTime;
             if (shortTimer >= shortInterval)
             {
-                Instantiate(turretBullet, firepoint.position, firepoint.rotation);
+                thisBullet=Instantiate(turretBullet, firepoint.position, firepoint.rotation) as GameObject;
+                TurretBullet TB = thisBullet.GetComponent<TurretBullet>();
+                TB.setDir(GetShootDirection());
                 shortTimer = 0;
                 bulletShot += 1;
                 if(bulletShot == bulletNum)

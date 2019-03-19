@@ -14,17 +14,12 @@ public class TurretBullet : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        //rb.velocity = transform.right * speed;
-        turr = GameObject.Find("Turret").GetComponent<Turret>();
-        Vector2 dir = turr.GetShootDirection();
-        rb.velocity = dir * speed;
-        print(dir);
+
     }
 
     private void Update()
     {
-        distance = (turr.transform.position - transform.position).sqrMagnitude;
-        if (distance > distanceThreshold)
+        if (!Camera.Instance.InRange(gameObject.transform.position.x, gameObject.transform.position.y))
         {
             Destroy(gameObject);
         }
@@ -41,5 +36,9 @@ public class TurretBullet : MonoBehaviour {
             }
             Destroy(gameObject);
         }
+    }
+    public void setDir(Vector2 dir)
+    {
+        rb.velocity = dir * speed;
     }
 }

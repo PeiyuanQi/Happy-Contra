@@ -18,7 +18,7 @@ public class TrapActivator : MonoBehaviour {
         if (collision.gameObject.tag == "Player")
         {
             trap.GetComponent<Rigidbody2D>().gravityScale = 5;
-            Destroy(gameObject);
+            Destroy(gameObject,3);
         }
     }
 
