@@ -148,7 +148,7 @@ public class PlayerMove : MonoBehaviour {
         moveY = Input.GetAxis("Vertical") + singleJoyStick.GetInputDirection().y;
         if (Input.GetKeyDown(KeyCode.Space) || jumpBtn.pressed)
         { 
-            if (Input.GetKey(KeyCode.S) || moveY < 0f)
+            if (Input.GetKey(KeyCode.S) || moveY < -0.3f)
             {
                 DownJump();
             }
@@ -158,12 +158,12 @@ public class PlayerMove : MonoBehaviour {
         {
             jump();
         }*/
-        if (Mathf.Abs(moveY)<0.01f && Mathf.Abs(moveX)<0.01f)
+        if (Mathf.Abs(moveY)<0.3f && Mathf.Abs(moveX)<0.01f)
         {
             if (faceRight) dire=Direction.Right;
             else dire=Direction.Left;
         }
-        else if (Mathf.Abs(moveY) < 0.01f)
+        else if (Mathf.Abs(moveY) < 0.3f)
         {
             if (moveX < 0f)
             {
@@ -176,7 +176,7 @@ public class PlayerMove : MonoBehaviour {
         }
         else if (moveY>0f)
         {
-            if (Mathf.Abs(moveX) < 0.01f) dire=Direction.Up;
+            if (Mathf.Abs(moveX) < 0.2f) dire=Direction.Up;
             else if (moveX > 0) dire=Direction.UpperRight;
             else dire=Direction.UpperLeft;
         }
