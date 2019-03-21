@@ -33,6 +33,7 @@ public class PlayerMove : MonoBehaviour {
     public int minYOfMap = -15;
 
     protected SingleJoystick singleJoyStick;
+    protected JumpBtn jumpBtn;
 
     enum Direction
     {
@@ -51,10 +52,11 @@ public class PlayerMove : MonoBehaviour {
         spr = gameObject.GetComponent<SpriteRenderer>();
         initPos = gameObject.transform.position;
         singleJoyStick = FindObjectOfType<SingleJoystick>();
+        jumpBtn = FindObjectOfType<JumpBtn>();
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update () {
         ToTransfer();
         Moving();
         JumpCheck();
@@ -142,9 +144,11 @@ public class PlayerMove : MonoBehaviour {
     }
     void Moving()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        moveX = Input.GetAxis("Horizontal") + singleJoyStick.GetInputDirection().x;
+        moveY = Input.GetAxis("Vertical") + singleJoyStick.GetInputDirection().y;
+        if (Input.GetKeyDown(KeyCode.Space) || jumpBtn.pressed)
         { 
-            if (Input.GetKey(KeyCode.S))
+            if (Input.GetKey(KeyCode.S) || moveY < 0f)
             {
                 DownJump();
             }
@@ -154,8 +158,6 @@ public class PlayerMove : MonoBehaviour {
         {
             jump();
         }*/
-        moveX = Input.GetAxis("Horizontal") + singleJoyStick.GetInputDirection().x;
-        moveY = Input.GetAxis("Vertical") + singleJoyStick.GetInputDirection().y;
         if (Mathf.Abs(moveY)<0.01f && Mathf.Abs(moveX)<0.01f)
         {
             if (faceRight) dire=Direction.Right;

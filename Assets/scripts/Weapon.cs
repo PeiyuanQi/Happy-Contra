@@ -13,15 +13,19 @@ public class Weapon : MonoBehaviour {
 
     private float shootTimerInterval = 0;  //表示子弹的间隔这个是一个固定的时间
 
+    protected ShootBtn shootBtn;
+
+
     private void Start()
     {
         PM = GameObject.Find("Player").GetComponent<PlayerMove>();
         shootTimerInterval = 1 / shootRate;
+        shootBtn = FindObjectOfType<ShootBtn>(); // joystick shoot btn
     }
 
     // Update is called once per frame
     void Update () {
-        if (Input.GetButton("Fire1"))
+        if (Input.GetButton("Fire1") || shootBtn.pressed)
         {
             shootTimer += Time.deltaTime;  //让子弹的时间控制器不断加等时间间隔
 
