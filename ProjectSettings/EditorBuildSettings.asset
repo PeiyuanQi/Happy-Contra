@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WaterCubeTransferScene.unity
     guid: 8ba68231c258e466eab8eb7eaae64a13
+  - enabled: 1
+    path: Assets/Scenes/SuccessScene.unity
+    guid: 95c6778a3d71f60479a72f2fae794e6a
   m_configObjects: {}
