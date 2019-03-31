@@ -6,6 +6,9 @@ public class Weapon : MonoBehaviour {
 
     private Transform firePoint;
     public GameObject bulletPrefab;
+    public GameObject bullet_S;
+    public GameObject bullet_S_Up;
+    public GameObject bullet_S_Down;
     private PlayerMove PM;
     public float shootRate = 5;  //表示每秒发射子弹的个数 俗称子弹的发射速率
 
@@ -44,7 +47,17 @@ public class Weapon : MonoBehaviour {
 
     void Shoot()
     {
-        firePoint = PM.GetFirePoint();
-        Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        if (bulletPrefab == bullet_S)
+        {
+            firePoint = PM.GetFirePoint();
+            Instantiate(bullet_S_Up, firePoint.position, firePoint.rotation);
+            Instantiate(bullet_S, firePoint.position, firePoint.rotation);
+            Instantiate(bullet_S_Down, firePoint.position, firePoint.rotation);
+        }
+        else
+        {
+            firePoint = PM.GetFirePoint();
+            Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        }
     }
 }
