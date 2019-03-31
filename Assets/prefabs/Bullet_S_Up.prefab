@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212038524606111324}
   - component: {fileID: 58007290838400364}
   - component: {fileID: 50749350046611288}
-  - component: {fileID: 114600103262462628}
+  - component: {fileID: 114531482619971770}
   m_Layer: 0
   m_Name: Bullet_S_Up
   m_TagString: Untagged
@@ -78,7 +78,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.04
---- !u!114 &114600103262462628
+--- !u!114 &114531482619971770
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -86,7 +86,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1766577996815988}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f82b02fcce887484eab086a2b888cac2, type: 3}
+  m_Script: {fileID: 11500000, guid: 6d76fbcbcd82041248870e64fc97e620, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30

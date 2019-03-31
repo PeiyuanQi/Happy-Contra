@@ -22,9 +22,9 @@ GameObject:
   - component: {fileID: 212164688766942484}
   - component: {fileID: 58533810902273744}
   - component: {fileID: 50536130472594880}
-  - component: {fileID: 114887721267302180}
+  - component: {fileID: 114272400312555358}
   m_Layer: 0
-  m_Name: Bullet_S_down
+  m_Name: Bullet_S_Down
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78,7 +78,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.04
---- !u!114 &114887721267302180
+--- !u!114 &114272400312555358
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -86,7 +86,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1088699477641114}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f82b02fcce887484eab086a2b888cac2, type: 3}
+  m_Script: {fileID: 11500000, guid: 2dfab5ffa5dbc4543a18d04b3f0de919, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
