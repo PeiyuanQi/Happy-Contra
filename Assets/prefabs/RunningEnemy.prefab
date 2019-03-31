@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 61008131824592998}
   - component: {fileID: 50668754301346474}
   - component: {fileID: 114098397628764892}
+  - component: {fileID: 95896707931307184}
   m_Layer: 11
   m_Name: RunningEnemy
   m_TagString: Enemy
@@ -88,6 +89,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.31429422, y: 0.38823023}
   m_EdgeRadius: 0
+--- !u!95 &95896707931307184
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1332136087303912}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e72f02f35d61eb94d8215c4a542983b8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114098397628764892
 MonoBehaviour:
   m_ObjectHideFlags: 1
