@@ -492,7 +492,8 @@ Prefab:
       propertyPath: health
       value: 2147483647
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114098397628764892, guid: 14d01bf21e112424ba79fe3973eb94b8, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 14d01bf21e112424ba79fe3973eb94b8, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &974701494
@@ -621,6 +622,28 @@ Prefab:
     - {fileID: 114107716292088554, guid: 728bec78ad247e04fbde091697f35081, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 728bec78ad247e04fbde091697f35081, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1193888730 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1332136087303912, guid: 14d01bf21e112424ba79fe3973eb94b8,
+    type: 2}
+  m_PrefabInternal: {fileID: 915064800}
+--- !u!114 &1193888732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1193888730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da507b956787d4143b47757b4df19cd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  damage: 50
+  deathEffect: {fileID: 0}
+  start: {fileID: 0}
+  speed: 0
+  direction: {x: -1, y: 0}
 --- !u!224 &1245415463 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 224107384144978528, guid: f70020c24ad4c40f495e83c470fb7387,
