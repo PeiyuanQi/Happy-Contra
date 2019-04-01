@@ -13,7 +13,6 @@ public class RunningEnemy : Enemy
     // Use this for initialization
     void Start()
     {
-        speed = 0.04f;
         srender = gameObject.GetComponent<SpriteRenderer>();
         ac = gameObject.GetComponent<Animator>();
     }
