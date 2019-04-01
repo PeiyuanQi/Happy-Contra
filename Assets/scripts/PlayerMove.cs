@@ -135,7 +135,8 @@ public class PlayerMove : MonoBehaviour {
     {
         if (onWaterCube)
         {
-            if(Input.GetKeyDown(KeyCode.DownArrow))
+            moveY = Input.GetAxis("Vertical") + singleJoyStick.GetInputDirection().y;
+            if (Input.GetKeyDown(KeyCode.DownArrow) || moveY < -0.4f)
             {
                 System.Threading.Thread.Sleep(1000);
                 StartCoroutine(Transfer());
