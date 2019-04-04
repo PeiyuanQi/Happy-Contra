@@ -9,13 +9,11 @@ public class ShootBtn : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
     public bool pressed;
 	// Use this for initialization
 	void Start () {
-		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+    }
 
     public void OnPointerDown(PointerEventData eventData)
     {
