@@ -17,6 +17,7 @@ TagManager:
   - WaterCube
   - Turret
   - Trampoline
+  - SavingPoint
   layers:
   - Default
   - TransparentFX

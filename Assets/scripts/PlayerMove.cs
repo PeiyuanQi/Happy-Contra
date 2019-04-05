@@ -15,7 +15,7 @@ public class PlayerMove : MonoBehaviour {
     private bool isGround = false;
     private bool faceRight = true;
     private bool onWaterCube = false;
-    private Vector3 initPos;
+    private static Vector3 initPos;
 
     private bool hasDied = false;
     private SpriteRenderer spr;
@@ -29,6 +29,7 @@ public class PlayerMove : MonoBehaviour {
     public Transform firepoint_lowerleft;
     private Transform firePoint;
     private Direction dire;
+    private static bool hasSaved = false;
 
     public int minYOfMap = -15;
 
@@ -50,7 +51,14 @@ public class PlayerMove : MonoBehaviour {
     void Start () {
         hasDied = false;
         spr = gameObject.GetComponent<SpriteRenderer>();
-        initPos = gameObject.transform.position;
+        if (!hasSaved)
+        {
+            initPos = gameObject.transform.position;
+        }
+        else
+        {
+            gameObject.transform.position = initPos;
+        }
         singleJoyStick = FindObjectOfType<SingleJoystick>();
         jumpBtn = FindObjectOfType<JumpBtn>();
     }
@@ -280,6 +288,10 @@ public class PlayerMove : MonoBehaviour {
         {
             hasDied = true;
         }
+        else if (collision.gameObject.tag == "SavingPoint")
+        {
+            UpdateSavingPoint();
+        }
     }
     public void Die()
     {
@@ -302,5 +314,9 @@ public class PlayerMove : MonoBehaviour {
         yield return new WaitForSeconds(2);
         //SceneManager.LoadScene("SampleScene");
     }
-
+    public void UpdateSavingPoint()
+    {
+        hasSaved = true;
+        initPos = gameObject.transform.position;
+    }
 }
