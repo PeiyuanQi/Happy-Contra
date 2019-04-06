@@ -30,8 +30,11 @@ public class Bullet : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
         Enemy enemy = hitInfo.GetComponent<Enemy>();
+        GameObject sound = GameObject.Find("Sound");
+        PlaySound play = sound.GetComponent<PlaySound>();
         if (enemy != null)
         {
+            play.PlayHitEnemy();
             enemy.TakeDamage(damage);
             Destroy(gameObject);
         }
@@ -39,18 +42,21 @@ public class Bullet : MonoBehaviour {
         PowerUpBlimp blimp = hitInfo.GetComponent<PowerUpBlimp>();
         if (blimp != null)
         {
+            play.PlayHitBox();
             blimp.TakeDamage(damage);
             Destroy(gameObject);
         }
         Box box= hitInfo.GetComponent<Box>();
         if (box != null)
         {
+            play.PlayHitBox();
             box.TakeDamage(damage);
             Destroy(gameObject);
         }
         MonsterBlock mBlock = hitInfo.GetComponent<MonsterBlock>();
         if (mBlock != null)
         {
+            play.PlayHitBox();
             mBlock.TakeDamage(damage);
             Destroy(gameObject);
         }
@@ -58,6 +64,7 @@ public class Bullet : MonoBehaviour {
         Monster monster = hitInfo.GetComponent<Monster>();
         if (monster != null)
         {
+            play.PlayHitEnemy();
             monster.TakeDamage(damage);
             Destroy(gameObject);
         }
@@ -65,6 +72,7 @@ public class Bullet : MonoBehaviour {
         Turret turret = hitInfo.GetComponent<Turret>();
         if(turret != null)
         {
+            play.PlayHitEnemy();
             turret.TakeDamage(damage);
             Destroy(gameObject);
         }
