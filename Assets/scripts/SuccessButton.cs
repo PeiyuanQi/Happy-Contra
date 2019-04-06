@@ -18,8 +18,13 @@ public class SuccessButton : MonoBehaviour {
 		
 	}
 
-    public void OnMenuButtonClick()
+    public void OnSuccessMenuClick()
     {
         SceneManager.LoadScene("MainScene");
+    }
+
+    public void OnSuccessReplayClick()
+    {
+        SceneManager.LoadScene("SampleScene");
     }
 }

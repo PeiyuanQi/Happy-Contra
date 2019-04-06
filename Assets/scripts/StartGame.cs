@@ -8,10 +8,7 @@ public class StartGame : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		this.gameObject.GetComponent<Button>().onClick.AddListener(delegate ()
-        {
-            StartCoroutine("Play");
-        });
+
 	}
 	
 	// Update is called once per frame
@@ -19,9 +16,8 @@ public class StartGame : MonoBehaviour {
 		
 	}
 
-    IEnumerator Play()
+    public void OnMainPlayClick()
     {
         SceneManager.LoadScene("SampleScene");
-        yield return new WaitForSeconds(2);
     }
 }
