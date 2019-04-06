@@ -6,6 +6,7 @@ using UnityEngine;
 public class FlyingEnemy : Enemy {
 
     public float speed;
+    private CameraControl cc;
     //private float currentposx;
     //private float currentposy;
 
@@ -15,16 +16,17 @@ public class FlyingEnemy : Enemy {
     {
         //currentposx = gameObject.transform.position.x;
         speed = 0.04f;
+        cc = GameObject.Find("Main Camera").GetComponent<CameraControl>();
     }
 
     void Update()
     {
         transform.Translate(Vector2.left * speed);
         //如果在摄像机画面左侧 -> 消失
-        if (Camera.Instance.LeftOutOfRange(gameObject.transform.position.x))
+        if (cc.LeftOutOfRange(gameObject.transform.position.x))
         {
             Debug.Log("fly destroyed");
-            Debug.Log(Camera.Instance.transform.position);
+            Debug.Log(cc.transform.position);
 
 
             Destroy(gameObject);

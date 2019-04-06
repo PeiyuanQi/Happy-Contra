@@ -6,6 +6,7 @@ using UnityEngine;
 public class MovingEnemy : Enemy {
 
     public float speed;
+    private CameraControl cc;
     //private float currentposx;
     //private float currentposy;
 
@@ -14,6 +15,7 @@ public class MovingEnemy : Enemy {
     void Start()
     {
         //currentposx = gameObject.transform.position.x;
+        cc = GameObject.Find("Main Camera").GetComponent<CameraControl>();
         speed = 0.04f;
     }
 
@@ -21,7 +23,7 @@ public class MovingEnemy : Enemy {
     {
         transform.Translate(Vector2.right * speed);
         //如果在摄像机画面右侧 -> 消失
-        if (Camera.Instance.RightOutOfRange(gameObject.transform.position.x))
+        if (cc.RightOutOfRange(gameObject.transform.position.x))
         {
             Destroy(gameObject);
         }

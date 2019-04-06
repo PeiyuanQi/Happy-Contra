@@ -9,6 +9,7 @@ public class Bullet_S_up: MonoBehaviour
     public int damage = 100;
     public Rigidbody2D rb;
     public PlayerMove PM;
+    private CameraControl cc;
 
     // Use this for initialization
     void Start()
@@ -18,11 +19,12 @@ public class Bullet_S_up: MonoBehaviour
         Vector2 dir = PM.GetShootDirection();
         dir = new Vector2(1,1);
         rb.velocity = dir * speed;
+        cc = GameObject.Find("Main Camera").GetComponent<CameraControl>();
     }
 
     private void Update()
     {
-        if (!Camera.Instance.InRange(gameObject.transform.position.x, gameObject.transform.position.y))
+        if (!cc.InRange(gameObject.transform.position.x, gameObject.transform.position.y))
         {
             Destroy(gameObject);
         }

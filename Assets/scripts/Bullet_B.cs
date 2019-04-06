@@ -8,6 +8,7 @@ public class Bullet_B : MonoBehaviour {
     public int damage = 100;
     public Rigidbody2D rb;
     public PlayerMove PM;
+    private CameraControl cc;
 
     // Use this for initialization
     void Start () {
@@ -15,11 +16,12 @@ public class Bullet_B : MonoBehaviour {
         PM= GameObject.Find("Player").GetComponent<PlayerMove>();
         Vector2 dir = PM.GetShootDirection();
         rb.velocity = dir*speed;
+        cc = GameObject.Find("Main Camera").GetComponent<CameraControl>();
     }
 
     private void Update()
     {
-        if (!Camera.Instance.InRange(gameObject.transform.position.x, gameObject.transform.position.y))
+        if (!cc.InRange(gameObject.transform.position.x, gameObject.transform.position.y))
         {
             Destroy(gameObject);
         }

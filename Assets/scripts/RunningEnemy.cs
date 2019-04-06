@@ -9,10 +9,12 @@ public class RunningEnemy : Enemy
     public Vector2 direction = Vector2.left;
     private SpriteRenderer srender;
     private Animator ac;
+    private CameraControl cc;
 
     // Use this for initialization
     void Start()
     {
+        cc = GameObject.Find("Main Camera").GetComponent<CameraControl>();
         srender = gameObject.GetComponent<SpriteRenderer>();
         ac = gameObject.GetComponent<Animator>();
     }
@@ -22,7 +24,7 @@ public class RunningEnemy : Enemy
     {
         transform.Translate(direction * speed);
         //如果在摄像机画面左侧 -> 消失
-        if (Camera.Instance.LeftOutOfRange(gameObject.transform.position.x))
+        if (cc.LeftOutOfRange(gameObject.transform.position.x))
         {
             Destroy(gameObject);
         }
