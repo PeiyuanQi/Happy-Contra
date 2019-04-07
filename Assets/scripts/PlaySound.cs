@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class PlaySound : MonoBehaviour {
     private AudioSource music;
-    private AudioClip hitenemy, hitbox;
+    private AudioClip hitenemy, hitbox,shoot,jump;
     // Use this for initialization
     void Start() {
         music = gameObject.AddComponent<AudioSource>();
         music.playOnAwake = false;
         hitenemy = Resources.Load<AudioClip>("hitenemy");
         hitbox = Resources.Load<AudioClip>("hitbox");
+        shoot = Resources.Load<AudioClip>("gun_shoot");
+        jump = Resources.Load<AudioClip>("jump");
     }
 	
 	// Update is called once per frame
@@ -26,6 +28,18 @@ public class PlaySound : MonoBehaviour {
     public void PlayHitBox()
     {
         music.clip = hitbox;
+        music.Play();
+        //Debug.Log("PlayHitBox");
+    }
+    public void PlayShoot()
+    {
+        music.clip = shoot;
+        music.Play();
+        //Debug.Log("PlayHitBox");
+    }
+    public void PlayJump()
+    {
+        music.clip = jump;
         music.Play();
         //Debug.Log("PlayHitBox");
     }

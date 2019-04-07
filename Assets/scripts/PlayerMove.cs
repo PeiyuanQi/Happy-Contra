@@ -61,6 +61,7 @@ public class PlayerMove : MonoBehaviour {
         }
         singleJoyStick = FindObjectOfType<SingleJoystick>();
         jumpBtn = FindObjectOfType<JumpBtn>();
+
     }
 
     // Update is called once per frame
@@ -200,8 +201,11 @@ public class PlayerMove : MonoBehaviour {
     }
     void Jump()
     {
+        GameObject sound = GameObject.Find("Sound");
+        PlaySound play = sound.GetComponent<PlaySound>();
         if (isGround)
         {
+            play.PlayJump();
             RaycastHit2D hit = Physics2D.Raycast(this.transform.position, Vector2.down, 1.0f, 1 << LayerMask.NameToLayer("Trampoline"));
             if (hit) gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 2 * jumpHeight);
             else gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * jumpHeight);
@@ -211,9 +215,12 @@ public class PlayerMove : MonoBehaviour {
     }
     void DownJump()
     {
+        GameObject sound = GameObject.Find("Sound");
+        PlaySound play = sound.GetComponent<PlaySound>();
         RaycastHit2D hit = Physics2D.Raycast(this.transform.position, Vector2.down, 1.0f, 1 << LayerMask.NameToLayer("Floor"));
         if (hit)
         {
+            play.PlayJump();
             hit.collider.isTrigger = true;
         }
         isGround = false;
