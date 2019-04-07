@@ -30,6 +30,7 @@ public class PlayerMove : MonoBehaviour {
     private Transform firePoint;
     private Direction dire;
     private static bool hasSaved = false;
+    private PlayerAnimation PA;
 
     public int minYOfMap = -15;
 
@@ -61,7 +62,7 @@ public class PlayerMove : MonoBehaviour {
         }
         singleJoyStick = FindObjectOfType<SingleJoystick>();
         jumpBtn = FindObjectOfType<JumpBtn>();
-
+        PA = gameObject.GetComponent<PlayerAnimation>();
     }
 
     // Update is called once per frame
@@ -83,58 +84,60 @@ public class PlayerMove : MonoBehaviour {
         switch (dire)
         {
             case Direction.Right:
-                spr.sprite = right;
-                spr.flipX = false;
+                //spr.sprite = right;
+                //spr.flipX = false;
                 faceRight = true;
                 direction = Vector2.right;
                 firePoint = firepoint_right;
                 break;
             case Direction.Left:
-                spr.sprite = right;
-                spr.flipX = true;
+                //spr.sprite = right;
+                //spr.flipX = true;
                 faceRight = false;
                 direction = Vector2.left;
                 firePoint = firepoint_left;
                 break;
             case Direction.LowerLeft:
-                spr.sprite = lowerRight;
-                spr.flipX = true;
+                //spr.sprite = lowerRight;
+                //spr.flipX = true;
                 faceRight = false;
                 direction = new Vector2(-1, -1);
                 direction.Normalize();
                 firePoint = firepoint_lowerleft;
                 break;
             case Direction.LowerRight:
-                spr.sprite = lowerRight;
-                spr.flipX = false;
+                //spr.sprite = lowerRight;
+                //spr.flipX = false;
                 faceRight = true;
                 direction = new Vector2(1, -1);
                 direction.Normalize();
                 firePoint = firepoint_lowerright;
                 break;
             case Direction.Up:
-                spr.sprite = lookUp;
+                //spr.sprite = lookUp;
                 faceRight = true;
                 direction = Vector2.up;
                 firePoint = firepoint_up;
                 break;
             case Direction.UpperRight:
-                spr.sprite = upperRight;
-                spr.flipX = false;
+                //spr.sprite = upperRight;
+                //spr.flipX = false;
                 faceRight = true;
                 direction = new Vector2(1, 1);
                 direction.Normalize();
                 firePoint = firepoint_upperright;
                 break;
             case Direction.UpperLeft:
-                spr.sprite = upperRight;
-                spr.flipX = true;
+                //spr.sprite = upperRight;
+                //spr.flipX = true;
                 faceRight = false;
                 direction = new Vector2(-1, 1);
                 direction.Normalize();
                 firePoint = firepoint_upperleft;
                 break;
         }
+        bool temp = Mathf.Abs(moveX) > 0 || Mathf.Abs(moveY) > 0;
+        PA.setAnim(faceRight, direction, !temp);
     }
     public Transform GetFirePoint()
     {

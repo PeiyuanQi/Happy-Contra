@@ -4682,7 +4682,6 @@ GameObject:
   - component: {fileID: 889766052}
   - component: {fileID: 889766051}
   - component: {fileID: 889766055}
-  - component: {fileID: 889766054}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -4735,24 +4734,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 80
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &889766054
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 889766050}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b32b5a1e65265644e9b8b0a8ab82652a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!212 &889766055
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10886,75 +10867,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 42
       objectReference: {fileID: 0}
-    - target: {fileID: 114601547554531460, guid: 728bec78ad247e04fbde091697f35081,
-        type: 2}
-      propertyPath: spawnPoint
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 61438932818658524, guid: 728bec78ad247e04fbde091697f35081,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 61438932818658524, guid: 728bec78ad247e04fbde091697f35081,
-        type: 2}
-      propertyPath: m_Offset.x
-      value: 0.0018434636
-      objectReference: {fileID: 0}
-    - target: {fileID: 61438932818658524, guid: 728bec78ad247e04fbde091697f35081,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 0.23368692
-      objectReference: {fileID: 0}
-    - target: {fileID: 1701187837441762, guid: 728bec78ad247e04fbde091697f35081, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1784548801124312, guid: 728bec78ad247e04fbde091697f35081, type: 2}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1701187837441762, guid: 728bec78ad247e04fbde091697f35081, type: 2}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1203896029149874, guid: 728bec78ad247e04fbde091697f35081, type: 2}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1253350611380850, guid: 728bec78ad247e04fbde091697f35081, type: 2}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1752262922941986, guid: 728bec78ad247e04fbde091697f35081, type: 2}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1127965158273746, guid: 728bec78ad247e04fbde091697f35081, type: 2}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1535593795239396, guid: 728bec78ad247e04fbde091697f35081, type: 2}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1491135656834066, guid: 728bec78ad247e04fbde091697f35081, type: 2}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 212799237691243574, guid: 728bec78ad247e04fbde091697f35081,
-        type: 2}
-      propertyPath: m_SortingLayerID
-      value: 107768693
-      objectReference: {fileID: 0}
-    - target: {fileID: 212799237691243574, guid: 728bec78ad247e04fbde091697f35081,
-        type: 2}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114560800974528176, guid: 728bec78ad247e04fbde091697f35081, type: 2}
-    - {fileID: 114107716292088554, guid: 728bec78ad247e04fbde091697f35081, type: 2}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 728bec78ad247e04fbde091697f35081, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &2079513981 stripped

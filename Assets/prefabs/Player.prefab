@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4443556815926732}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FirePoint-upperleft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34,7 +34,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4957427318827112}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FirePoint-up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49,7 +49,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4132027042039354}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FirePoint-left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4857672030276522}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FirePoint-lowerleft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79,7 +79,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4720468137229602}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FirePoint-lowerright
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4277739978683448}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FirePoint-right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4896577479698322}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FirePoint-upperright
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,9 +130,9 @@ GameObject:
   - component: {fileID: 114601547554531460}
   - component: {fileID: 114003654433983002}
   - component: {fileID: 114203192247060362}
-  - component: {fileID: 114560800974528176}
-  - component: {fileID: 114107716292088554}
-  m_Layer: 0
+  - component: {fileID: 95341107478056816}
+  - component: {fileID: 114305491249761328}
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -237,7 +237,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1784548801124312}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.77, y: 3.8, z: -1}
+  m_LocalPosition: {x: -7, y: 2.81, z: -1}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
   - {fileID: 4277739978683448}
@@ -282,7 +282,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.032251835, y: 0}
+  m_Offset: {x: 0.0018434636, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -293,8 +293,26 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16549632, y: 0.34}
+  m_Size: {x: 0.23368692, y: 0.34}
   m_EdgeRadius: 0
+--- !u!95 &95341107478056816
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1784548801124312}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5fad4b0569f5d5c49bea3c16d42e8ea7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114003654433983002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -308,19 +326,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1964251909398526, guid: 6485a4f2a00a74187a18f5bd71fc6b7c,
     type: 2}
+  bullet_S: {fileID: 0}
+  bullet_S_Up: {fileID: 0}
+  bullet_S_Down: {fileID: 0}
   shootRate: 5
---- !u!114 &114107716292088554
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1784548801124312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5de4d3f13d7b64305958469981f5ccef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
 --- !u!114 &114203192247060362
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -333,7 +342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
---- !u!114 &114560800974528176
+--- !u!114 &114305491249761328
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -341,10 +350,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1784548801124312}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5de4d3f13d7b64305958469981f5ccef, type: 3}
+  m_Script: {fileID: 11500000, guid: 289186f4a994c474baefdaa5f4d9b896, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
 --- !u!114 &114601547554531460
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -367,7 +375,7 @@ MonoBehaviour:
   firepoint_upperleft: {fileID: 4443556815926732}
   firepoint_lowerright: {fileID: 4720468137229602}
   firepoint_lowerleft: {fileID: 4857672030276522}
-  spawnPoint: {fileID: 0}
+  minYOfMap: -15
 --- !u!212 &212799237691243574
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -400,8 +408,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 107768693
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300010, guid: 168639c38dc778a4286d9b3c192f379b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
