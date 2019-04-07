@@ -19,6 +19,9 @@ public class SceneControl : MonoBehaviour {
 
     IEnumerator ShowScene()
     {
+        GameObject sound = GameObject.Find("Sound");
+        PlaySound play = sound.GetComponent<PlaySound>();
+        play.PlayDeath();
         numLifes--;
         lifes.text = " : " + numLifes.ToString();
         yield return new WaitForSeconds(2);

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlaySound : MonoBehaviour {
     private AudioSource music;
-    private AudioClip hitenemy, hitbox,shoot,jump;
+    private AudioClip hitenemy, hitbox, shoot, jump, death;
     // Use this for initialization
     void Start() {
         music = gameObject.AddComponent<AudioSource>();
@@ -13,6 +13,7 @@ public class PlaySound : MonoBehaviour {
         hitbox = Resources.Load<AudioClip>("hitbox");
         shoot = Resources.Load<AudioClip>("gun_shoot");
         jump = Resources.Load<AudioClip>("jump");
+        death = Resources.Load<AudioClip>("death");
     }
 	
 	// Update is called once per frame
@@ -42,5 +43,11 @@ public class PlaySound : MonoBehaviour {
         music.clip = jump;
         music.Play();
         //Debug.Log("PlayHitBox");
+    }
+    public void PlayDeath()
+    {
+        music.clip = death;
+        music.Play();
+        //Debug.Log("PlayDeath");
     }
 }
