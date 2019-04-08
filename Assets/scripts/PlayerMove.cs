@@ -56,7 +56,7 @@ public class PlayerMove : MonoBehaviour {
         {
             initPos = gameObject.transform.position;
         }
-        else
+        else if (SceneManager.GetActiveScene().name == "SampleScene")
         {
             gameObject.transform.position = initPos;
         }
