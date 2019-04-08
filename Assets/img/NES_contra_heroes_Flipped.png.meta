@@ -1,0 +1,2315 @@
+fileFormatVersion: 2
+guid: 73b54dcb42e8c4806a991a33166ff73d
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: NES_contra_heroes_Flipped_0
+    21300002: NES_contra_heroes_Flipped_1
+    21300004: NES_contra_heroes_Flipped_2
+    21300006: NES_contra_heroes_Flipped_3
+    21300008: NES_contra_heroes_Flipped_4
+    21300010: NES_contra_heroes_Flipped_5
+    21300012: NES_contra_heroes_Flipped_6
+    21300014: NES_contra_heroes_Flipped_7
+    21300016: NES_contra_heroes_Flipped_8
+    21300018: NES_contra_heroes_Flipped_9
+    21300020: NES_contra_heroes_Flipped_10
+    21300022: NES_contra_heroes_Flipped_11
+    21300024: NES_contra_heroes_Flipped_12
+    21300026: NES_contra_heroes_Flipped_13
+    21300028: NES_contra_heroes_Flipped_14
+    21300030: NES_contra_heroes_Flipped_15
+    21300032: NES_contra_heroes_Flipped_16
+    21300034: NES_contra_heroes_Flipped_17
+    21300036: NES_contra_heroes_Flipped_18
+    21300038: NES_contra_heroes_Flipped_19
+    21300040: NES_contra_heroes_Flipped_20
+    21300042: NES_contra_heroes_Flipped_21
+    21300044: NES_contra_heroes_Flipped_22
+    21300046: NES_contra_heroes_Flipped_23
+    21300048: NES_contra_heroes_Flipped_24
+    21300050: NES_contra_heroes_Flipped_25
+    21300052: NES_contra_heroes_Flipped_26
+    21300054: NES_contra_heroes_Flipped_27
+    21300056: NES_contra_heroes_Flipped_28
+    21300058: NES_contra_heroes_Flipped_29
+    21300060: NES_contra_heroes_Flipped_30
+    21300062: NES_contra_heroes_Flipped_31
+    21300064: NES_contra_heroes_Flipped_32
+    21300066: NES_contra_heroes_Flipped_33
+    21300068: NES_contra_heroes_Flipped_34
+    21300070: NES_contra_heroes_Flipped_35
+    21300072: NES_contra_heroes_Flipped_36
+    21300074: NES_contra_heroes_Flipped_37
+    21300076: NES_contra_heroes_Flipped_38
+    21300078: NES_contra_heroes_Flipped_39
+    21300080: NES_contra_heroes_Flipped_40
+    21300082: NES_contra_heroes_Flipped_41
+    21300084: NES_contra_heroes_Flipped_42
+    21300086: NES_contra_heroes_Flipped_43
+    21300088: NES_contra_heroes_Flipped_44
+    21300090: NES_contra_heroes_Flipped_45
+    21300092: NES_contra_heroes_Flipped_46
+    21300094: NES_contra_heroes_Flipped_47
+    21300096: NES_contra_heroes_Flipped_48
+    21300098: NES_contra_heroes_Flipped_49
+    21300100: NES_contra_heroes_Flipped_50
+    21300102: NES_contra_heroes_Flipped_51
+    21300104: NES_contra_heroes_Flipped_52
+    21300106: NES_contra_heroes_Flipped_53
+    21300108: NES_contra_heroes_Flipped_54
+    21300110: NES_contra_heroes_Flipped_55
+    21300112: NES_contra_heroes_Flipped_56
+    21300114: NES_contra_heroes_Flipped_57
+    21300116: NES_contra_heroes_Flipped_58
+    21300118: NES_contra_heroes_Flipped_59
+    21300120: NES_contra_heroes_Flipped_60
+    21300122: NES_contra_heroes_Flipped_61
+    21300124: NES_contra_heroes_Flipped_62
+    21300126: NES_contra_heroes_Flipped_63
+    21300128: NES_contra_heroes_Flipped_64
+    21300130: NES_contra_heroes_Flipped_65
+    21300132: NES_contra_heroes_Flipped_66
+    21300134: NES_contra_heroes_Flipped_67
+    21300136: NES_contra_heroes_Flipped_68
+    21300138: NES_contra_heroes_Flipped_69
+    21300140: NES_contra_heroes_Flipped_70
+    21300142: NES_contra_heroes_Flipped_71
+    21300144: NES_contra_heroes_Flipped_72
+    21300146: NES_contra_heroes_Flipped_73
+    21300148: NES_contra_heroes_Flipped_74
+    21300150: NES_contra_heroes_Flipped_75
+    21300152: NES_contra_heroes_Flipped_76
+    21300154: NES_contra_heroes_Flipped_77
+    21300156: NES_contra_heroes_Flipped_78
+    21300158: NES_contra_heroes_Flipped_79
+    21300160: NES_contra_heroes_Flipped_80
+    21300162: NES_contra_heroes_Flipped_81
+    21300164: NES_contra_heroes_Flipped_82
+    21300166: NES_contra_heroes_Flipped_83
+    21300168: NES_contra_heroes_Flipped_84
+    21300170: NES_contra_heroes_Flipped_85
+    21300172: NES_contra_heroes_Flipped_86
+    21300174: NES_contra_heroes_Flipped_87
+    21300176: NES_contra_heroes_Flipped_88
+    21300178: NES_contra_heroes_Flipped_89
+    21300180: NES_contra_heroes_Flipped_90
+    21300182: NES_contra_heroes_Flipped_91
+    21300184: NES_contra_heroes_Flipped_92
+    21300186: NES_contra_heroes_Flipped_93
+    21300188: NES_contra_heroes_Flipped_94
+    21300190: NES_contra_heroes_Flipped_95
+    21300192: NES_contra_heroes_Flipped_96
+    21300194: NES_contra_heroes_Flipped_97
+    21300196: NES_contra_heroes_Flipped_98
+    21300198: NES_contra_heroes_Flipped_99
+    21300200: NES_contra_heroes_Flipped_100
+    21300202: NES_contra_heroes_Flipped_101
+    21300204: NES_contra_heroes_Flipped_102
+    21300206: NES_contra_heroes_Flipped_103
+    21300208: NES_contra_heroes_Flipped_104
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_0
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 451
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d7ef8964efda40a992b258194af081b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_1
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 451
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6891f223ca7fc4749b0b07206b536b8d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_2
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 451
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36afe2805b3134c0f9e1768e2351edf9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_3
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 451
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff36b798621134ff5862e8813548aa3d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_4
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 451
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 824ee340acd194210b5164315f4848d9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_5
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 405
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7db996e38ebcf4cfca743a0d42667bab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_6
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 404
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d001b4fa0f0244cd98dcdff13f65b083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_7
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 404
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a625221717614e7b811e94b8573fbcc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_8
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 404
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb69bfe21e0a54be38bc3e2a60af07f6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_9
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 404
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79931def80bae4409b56fcfd934ef0de
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_10
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 404
+        width: 14
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d783fb3829fa45d1adcbadee2d046cf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_11
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 404
+        width: 14
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62609c275090c4029adea90b3c6c3c95
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_12
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 404
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17414bc620e554a7bbbd0da969c6c603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_13
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 404
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd647459c45f1436cb0686bd70c173da
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_14
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 368
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba2e5e5af29d048df8a51d5950fd30dc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_15
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 367
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4b0e81ebc758435e8eea46c6252fac3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_16
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 367
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bf7d61f0842a4ec3ba0472f4c3bcf82
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_17
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 367
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cd47a230218d4513854415e1bd27f3d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_18
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 367
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5704a9298964c4e90ad0c436f6793409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_19
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 367
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27c8aa0d3104e4b42b5c0fce29bdf588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_20
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 367
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63820ce272c974e41a4623890d6a9f19
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_21
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 367
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f083dbcb2b3944fa78fd4a23565d4dd6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_22
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 367
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f8c8121262b44a684400bea9fa9316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_23
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 367
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8824d8eedc27145adba3e4c6c2782cb9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_24
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 367
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a64ccdcf778542d8b06796d30d395e8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_25
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 367
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49261685f3fa34fc6ab56e1ad9a0fcba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_26
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 338
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c349de5374b1b40888c22786fe5e4f5d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_27
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 338
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ba9db8deadad45ab9403cc3c0e326b7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_28
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 338
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bc067800b80e4145ab173cfb68f4edc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_29
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 338
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc8d5e694296496ab7b67b2fa02e34a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_30
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 338
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 875e2c601aa8c4917aca49dba015ba57
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_31
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 338
+        width: 32
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bab2b18a57cb4ddca6886856adbe08e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_32
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 338
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40cace6618590435285d5fb3906b87fd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_33
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 338
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3331f0af7292d41b497b8f81add47a99
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_34
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 338
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41350b94c5b9e4b01985a87f1773fb6e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_35
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 291
+        width: 18
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f92815ee796f4a2fb6953d1fb34ab6b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_36
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 291
+        width: 16
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbb380c1a6436445d8dea51d98d362a1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_37
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 291
+        width: 20
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a948b0b13b6944b33833a1cc48c969af
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_38
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 291
+        width: 18
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33356fad91b084eba95c2c43264e042e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_39
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 291
+        width: 16
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ad35c951ac09426f96f40c50d5d4a84
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_40
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 291
+        width: 20
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce53458293e7043bfb3ac1caf9b00d0a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_41
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 291
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f81f28fc652b843a791330b7caa4178a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_42
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 291
+        width: 19
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a1dcb1f5753243b88ce5ed65d80e428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_43
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 244
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad79af237a49d49eead11550668b6726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_44
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 244
+        width: 24
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6e13428088c84028a7520c991742d8c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_45
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 244
+        width: 24
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cff11d44c0a4f494b9313ce7b7c6f333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_46
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 244
+        width: 24
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06b28c495fdeb4ea9878c8b63d92d51a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_47
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 244
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13968bd6a5d284a058e913161f6e3fe9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_48
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 244
+        width: 19
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a91ba426d04c44a08fecc87239720bf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_49
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 226
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54cbb600b4c554386bd5d24c342f8bec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_50
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 226
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 228d434a33e244a029385bff4d7d50b2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_51
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 226
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eafa0e43969824e908c002f935026378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_52
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 226
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc82730f1d58a480786245fcbf019e04
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_53
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 226
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bb55cbaffd344804bb9ac0e06d209cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_54
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 180
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68af01d5121074ce4a0df05bad14bb3e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_55
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 179
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12d0157af879f43b78ed0deb216c04a5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_56
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 179
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc611db7f33fa4a4588ce17a36735289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_57
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 179
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c08d1d0d22319470db9b2ae359131684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_58
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 179
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee39848b53126426d9a86623a6473f54
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_59
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 179
+        width: 14
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f4468406c47a4d108d759895568e845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_60
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 179
+        width: 14
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 529ae8a3b13ea49709208df1226ecb97
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_61
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 179
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7afa758de5e984b2192bb3b0ee82a0b4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_62
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 179
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6237184b35dc4f9fa29304e7c9ab799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_63
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 143
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 133698f83bcc34957ab85d7bf6d97bfc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_64
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 142
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9573d37df532412db966ce77a7a5711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_65
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 142
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0532b77cbacbe406b994f3edfda93687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_66
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 142
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cabec0dc01394bc087136f79116fec2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_67
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 142
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d7c4686f703d48a2a64ae4b70aaa471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_68
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 142
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07730d0099e5f4430a16938f111a1042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_69
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 142
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16eafe314cb9143c99d83ba4c158432b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_70
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 142
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b65bc17ee0db4239b66447704507cb5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_71
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 142
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeba4c2d7fc454d2b82049a938a82e64
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_72
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 142
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ac19610e787e407fb4621b698e76a85
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_73
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 142
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a27adcd74734cffa7c6d9a9a15a05c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_74
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 142
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d43c1ae2dd148eeba493cb00274ccc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_75
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 113
+        width: 32
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96be883dcfe5341baaf8439e3279608c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_76
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 113
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43bffc4be7dff483d96f5a355c1bced7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_77
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 113
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6de1ce1870994885a8d2116d4308df4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_78
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 113
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1011e33c4d4a84dc8abccf2072f05fb7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_79
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 66
+        width: 18
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d5447713757f40d89720cc0f9a8b314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_80
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 66
+        width: 16
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a9ba9ed1e8f442fd8a65491c461830a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_81
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 66
+        width: 20
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b8d633fdf19e4c1c9094c43153ff511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_82
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 66
+        width: 18
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21eb66fc68bf44d769a9d0bd14720826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_83
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 66
+        width: 16
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a42c48b67f9a543f38653ef52f2eb3e3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_84
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 66
+        width: 20
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d01d7a32b7cc43a685325868d39a155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_85
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 66
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b00fed63e8529459cb1546df33feda1d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_86
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 66
+        width: 19
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1d83a48cca0344f2a2329a833ae47e2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_87
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 19
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8340d4edf3f7d48df8ad8e56963a887f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_88
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 19
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd029f583b30e49258883991895ae3ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_89
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 19
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d27d50932c1f4c72b5b430977bb7b0c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_90
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 19
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ebabf9d242d44b209f2ddfffece063b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_91
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 19
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8722ac57112de484d87e49811a7898e1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_92
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 19
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecb70cde52a7e49e8bbffc807bb882f6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_93
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 19
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de3f083465d7e459893677100a5d26ca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_94
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 2
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe0000148cf4e41feaeb328dd406deb6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_95
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 19
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3c058cf2f22e406e98f731d33c3dbab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_96
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 19
+        width: 24
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7a8c11a16d284e149a0e0cf75bda49a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_97
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 19
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a0cc191c581d47e4a31484795a8e815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_98
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 19
+        width: 19
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0aee5257d31d4d13ad6da0d31f5d06e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_99
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 2
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe7bd57ffb9240eba5f4092b238564e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_100
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 2
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5887b97404f5244d588e4eab1316d427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_101
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 2
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4975acc36c2bc46518eb483842958c8f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_102
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 2
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6ac0ae018f2a43518477fc07f93ddc5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_103
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 994364c4c7552446291187c6cc30b5cb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_contra_heroes_Flipped_104
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 2
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 697840ab7661c479c830afdbb7ad00da
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 44a685471480b46b397f2e2656ccf0d3
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
