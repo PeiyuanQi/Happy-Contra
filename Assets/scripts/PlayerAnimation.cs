@@ -16,15 +16,12 @@ public class PlayerAnimation : MonoBehaviour {
 	}
     public void setAnim(bool mirror, Vector2 dir, bool standing)
     {
-        ac.SetBool("Mirror", mirror);
-        if (standing)
-        {
-            ac.Play("PlayerStanding");
-            return;
-        }
+        //0:horizontal; 1: upper; 2: lower; 3:lookup
+        ac.SetBool("FaceRight", mirror);
+        ac.SetBool("Standing", standing);
         if (dir.y==0)
         {
-            ac.Play("PlayerWalkRight");
+            ac.SetInteger("Direction", 0);
         }
         else
         {
@@ -32,17 +29,17 @@ public class PlayerAnimation : MonoBehaviour {
             {
                 if (dir.x==0)
                 {
-                    ac.Play("PlayerLookUp");
+                    ac.SetInteger("Direction", 3);
                 }
                 else
                 {
-                    ac.Play("PlayerShootingUpperRight");
+                    ac.SetInteger("Direction", 1);
                 }
                 
             }
             else
             {
-                ac.Play("PlayerShootingLowerRight");
+                ac.SetInteger("Direction", 2);
             }
         }
     }

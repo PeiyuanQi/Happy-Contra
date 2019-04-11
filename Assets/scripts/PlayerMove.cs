@@ -23,6 +23,7 @@ public class PlayerMove : MonoBehaviour {
     public Transform firepoint_right;
     public Transform firepoint_left;
     public Transform firepoint_up;
+    public Transform firepoint_up_left;
     public Transform firepoint_upperright;
     public Transform firepoint_upperleft;
     public Transform firepoint_lowerright;
@@ -115,9 +116,10 @@ public class PlayerMove : MonoBehaviour {
                 break;
             case Direction.Up:
                 //spr.sprite = lookUp;
-                faceRight = true;
+                //faceRight = true;
                 direction = Vector2.up;
-                firePoint = firepoint_up;
+                if (faceRight) firePoint = firepoint_up;
+                else firePoint = firepoint_up_left;
                 break;
             case Direction.UpperRight:
                 //spr.sprite = upperRight;

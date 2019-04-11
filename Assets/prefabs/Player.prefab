@@ -86,6 +86,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1689599955566630
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4761195710087634}
+  m_Layer: 8
+  m_Name: FirePoint-up-left
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1701187837441762
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,6 +206,19 @@ Transform:
   m_Father: {fileID: 4962308298572052}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4761195710087634
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1689599955566630}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.039, y: 0.229, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4962308298572052}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4857672030276522
 Transform:
   m_ObjectHideFlags: 1
@@ -247,6 +275,7 @@ Transform:
   - {fileID: 4443556815926732}
   - {fileID: 4720468137229602}
   - {fileID: 4857672030276522}
+  - {fileID: 4761195710087634}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -326,9 +355,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1964251909398526, guid: 6485a4f2a00a74187a18f5bd71fc6b7c,
     type: 2}
-  bullet_S: {fileID: 0}
-  bullet_S_Up: {fileID: 0}
-  bullet_S_Down: {fileID: 0}
+  bullet_S: {fileID: 1567025043229096, guid: b42b512e3d7d34015a50f314106e415b, type: 2}
+  bullet_S_Up: {fileID: 1766577996815988, guid: 3eddea8424fda4f0db45afbb98656afd,
+    type: 2}
+  bullet_S_Down: {fileID: 1088699477641114, guid: 2f63341775e8e414e84ff373401e76e4,
+    type: 2}
   shootRate: 5
 --- !u!114 &114203192247060362
 MonoBehaviour:
@@ -371,6 +402,7 @@ MonoBehaviour:
   firepoint_right: {fileID: 4277739978683448}
   firepoint_left: {fileID: 4132027042039354}
   firepoint_up: {fileID: 4957427318827112}
+  firepoint_up_left: {fileID: 4761195710087634}
   firepoint_upperright: {fileID: 4896577479698322}
   firepoint_upperleft: {fileID: 4443556815926732}
   firepoint_lowerright: {fileID: 4720468137229602}
