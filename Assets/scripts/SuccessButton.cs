@@ -5,12 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class SuccessButton : MonoBehaviour {
 
-    
-
     // Use this for initialization
     void Start () {
-		
-	}
+
+    }
     
 
     // Update is called once per frame
@@ -20,11 +18,13 @@ public class SuccessButton : MonoBehaviour {
 
     public void OnSuccessMenuClick()
     {
+        PlayerMove.ResetSavingPoint();
         SceneManager.LoadScene("MainScene");
     }
 
     public void OnSuccessReplayClick()
     {
+        PlayerMove.ResetSavingPoint();
         SceneManager.LoadScene("SampleScene");
     }
 }

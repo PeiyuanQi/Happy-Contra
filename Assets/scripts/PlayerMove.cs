@@ -15,6 +15,7 @@ public class PlayerMove : MonoBehaviour {
     private bool isGround = false;
     private bool faceRight = true;
     private bool onWaterCube = false;
+    private static Vector3 startPos;
     private static Vector3 initPos;
 
     private bool hasDied = false;
@@ -56,10 +57,11 @@ public class PlayerMove : MonoBehaviour {
         if (!hasSaved)
         {
             initPos = gameObject.transform.position;
+            startPos = initPos;
         }
         else if (SceneManager.GetActiveScene().name == "SampleScene")
         {
-            gameObject.transform.position = initPos;
+            gameObject.transform.position = startPos;
         }
         singleJoyStick = FindObjectOfType<SingleJoystick>();
         jumpBtn = FindObjectOfType<JumpBtn>();
@@ -321,7 +323,7 @@ public class PlayerMove : MonoBehaviour {
     public IEnumerator ToStart()
     {
         hasDied = false;
-        gameObject.transform.position = initPos;
+        gameObject.transform.position = startPos;
         SceneManager.LoadScene("DeathScene");
         yield return new WaitForSeconds(2);
         //SceneManager.LoadScene("SampleScene");
@@ -329,11 +331,17 @@ public class PlayerMove : MonoBehaviour {
     public void UpdateSavingPoint()
     {
         hasSaved = true;
-        initPos = gameObject.transform.position;
+        startPos = gameObject.transform.position;
     }
     public bool IsSaved()
     {
         Debug.Log("return" + hasSaved);
         return hasSaved;
+    }
+    public static void ResetSavingPoint()
+    {
+        hasSaved = false;
+        startPos = initPos;
+        Debug.Log("reset");
     }
 }

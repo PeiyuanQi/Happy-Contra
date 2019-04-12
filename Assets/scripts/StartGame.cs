@@ -8,8 +8,8 @@ public class StartGame : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
-	}
+       
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -18,6 +18,7 @@ public class StartGame : MonoBehaviour {
 
     public void OnMainPlayClick()
     {
+        PlayerMove.ResetSavingPoint();
         SceneManager.LoadScene("SampleScene");
     }
 }
