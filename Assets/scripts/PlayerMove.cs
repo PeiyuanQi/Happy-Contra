@@ -331,4 +331,9 @@ public class PlayerMove : MonoBehaviour {
         hasSaved = true;
         initPos = gameObject.transform.position;
     }
+    public bool IsSaved()
+    {
+        Debug.Log("return" + hasSaved);
+        return hasSaved;
+    }
 }

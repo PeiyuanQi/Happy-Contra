@@ -1328,8 +1328,9 @@ GameObject:
   m_Component:
   - component: {fileID: 169356275}
   - component: {fileID: 169356274}
-  - component: {fileID: 169356276}
   - component: {fileID: 169356277}
+  - component: {fileID: 169356276}
+  - component: {fileID: 169356278}
   m_Layer: 0
   m_Name: OvertheFlagpole
   m_TagString: SavingPoint
@@ -1396,17 +1397,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 78
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &169356276
-MonoBehaviour:
+--- !u!95 &169356276
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 169356273}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd4cbdcd28c0f443f971f97bb35f4418, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b505f4ab4d5f044c29a1a17e8ad9e1e7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!61 &169356277
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1432,6 +1440,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.85980874, y: 4.79}
   m_EdgeRadius: 0
+--- !u!114 &169356278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 169356273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03964303e35c2409aad03d5041d66b34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 169356276}
 --- !u!1 &174817759
 GameObject:
   m_ObjectHideFlags: 0
