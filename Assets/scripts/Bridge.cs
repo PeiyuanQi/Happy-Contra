@@ -49,8 +49,9 @@ public class Bridge : MonoBehaviour {
     {
         yield return new WaitForSeconds(seconds);
         play.PlayExplode();
-        block.SetActive(false);
+        //block.SetActive(false);
         GameObject exp = Instantiate(bridgeExplosionPrefab, block.transform.position, Quaternion.identity);
+        Destroy(block);
         Destroy(exp, 0.3f);
     }
 }

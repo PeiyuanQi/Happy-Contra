@@ -16,7 +16,7 @@ public class PlayerAnimation : MonoBehaviour {
 	}
     public void setAnim(bool mirror, Vector2 dir, bool standing)
     {
-        //0:horizontal; 1: upper; 2: lower; 3:lookup
+        //0:horizontal; 1: upper; 2: lower; 3:lookup;
         ac.SetBool("FaceRight", mirror);
         ac.SetBool("Standing", standing);
         if (dir.y==0)
