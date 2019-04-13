@@ -14,12 +14,16 @@ public class Bridge : MonoBehaviour {
     public GameObject bridgeExplosionPrefab;
 
     public bool exist = true; //bridge still exists?
+    private GameObject sound;
+    private PlaySound play;
 
 
     // Use this for initialization
     void Start () {
         exist = true;
-	}
+        sound = GameObject.Find("Sound");
+        play = sound.GetComponent<PlaySound>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -44,6 +48,7 @@ public class Bridge : MonoBehaviour {
     IEnumerator BridgeBlockExplosion(GameObject block, float seconds)
     {
         yield return new WaitForSeconds(seconds);
+        play.PlayExplode();
         block.SetActive(false);
         GameObject exp = Instantiate(bridgeExplosionPrefab, block.transform.position, Quaternion.identity);
         Destroy(exp, 0.3f);

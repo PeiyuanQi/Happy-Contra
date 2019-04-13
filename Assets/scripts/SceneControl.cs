@@ -21,7 +21,7 @@ public class SceneControl : MonoBehaviour {
     {
         GameObject sound = GameObject.Find("Sound");
         PlaySound play = sound.GetComponent<PlaySound>();
-        play.PlayDeath();
+        play.PlayDie();
         numLifes--;
         lifes.text = " : " + numLifes.ToString();
         yield return new WaitForSeconds(2);
