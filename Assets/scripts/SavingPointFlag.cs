@@ -27,6 +27,9 @@ public class SavingPointFlag : MonoBehaviour {
         if (collision.gameObject.tag == "Player")
         {
             animator.SetBool("saved", true);
+            GameObject sound = GameObject.Find("Sound");
+            PlaySound play = sound.GetComponent<PlaySound>();
+            play.UnsetEnableExplode();
         }
     }
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlaySound : MonoBehaviour {
     private AudioSource music;
     private AudioClip hitenemy, hitbox, shoot, jump, die, explode;
+    private static bool enableExplode = true;
     // Use this for initialization
     void Start() {
         music = gameObject.AddComponent<AudioSource>();
@@ -56,5 +57,13 @@ public class PlaySound : MonoBehaviour {
         music.clip = explode;
         music.Play();
         //Debug.Log("PlayExplode");
+    }
+    public bool GetEnableExplode()
+    {
+        return enableExplode;
+    }
+    public void UnsetEnableExplode()
+    {
+        enableExplode = false;
     }
 }

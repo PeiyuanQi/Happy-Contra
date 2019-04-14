@@ -48,7 +48,7 @@ public class Bridge : MonoBehaviour {
     IEnumerator BridgeBlockExplosion(GameObject block, float seconds)
     {
         yield return new WaitForSeconds(seconds);
-        play.PlayExplode();
+        if(play.GetEnableExplode())play.PlayExplode();
         //block.SetActive(false);
         GameObject exp = Instantiate(bridgeExplosionPrefab, block.transform.position, Quaternion.identity);
         Destroy(block);
