@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212655689604896814}
   - component: {fileID: 61533353196006094}
   m_Layer: 13
-  m_Name: trampoline 1
+  m_Name: trampoline
   m_TagString: Trampoline
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
