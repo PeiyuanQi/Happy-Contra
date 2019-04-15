@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet_S_down: MonoBehaviour
+public class Bullet_S_down : MonoBehaviour
 {
 
     public float speed = 30;
@@ -10,6 +10,7 @@ public class Bullet_S_down: MonoBehaviour
     public Rigidbody2D rb;
     public PlayerMove PM;
     private CameraControl cc;
+    private float radius = 1.414f;
 
     // Use this for initialization
     void Start()
@@ -17,9 +18,12 @@ public class Bullet_S_down: MonoBehaviour
         //rb.velocity = transform.right * speed;
         PM = GameObject.Find("Player").GetComponent<PlayerMove>();
         Vector2 dir = PM.GetShootDirection();
-        dir = new Vector2(1,-1);
-        rb.velocity = dir * speed;
+        float dirX = ((dir.x / radius) * Mathf.Cos((-30 * Mathf.PI) / 180) - (dir.y / radius) * Mathf.Sin((-30 * Mathf.PI) / 180)) * 1.0f;
+        float dirY = ((dir.y / radius) * Mathf.Cos((-30 * Mathf.PI) / 180) + (dir.x / radius) * Mathf.Sin((-30 * Mathf.PI) / 180)) * 1.0f;
+        Vector2 dir_new = new Vector2(dirX, dirY);
+        rb.velocity = dir_new * speed;
         cc = GameObject.Find("Main Camera").GetComponent<CameraControl>();
+
     }
 
     private void Update()
