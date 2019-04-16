@@ -5,16 +5,18 @@ using UnityEngine;
 public class QuestionBlock : MonoBehaviour {
     public float bounceHeight = 0.75f;
     public float bounceSpeed = 4f;
+    public GameObject monsterPrefab;
 
     private Vector2 originalPosition;
 
     private bool canBounce = true;
-
-	// Use this for initialization
-	void Start () {
+    private Vector2 door;
+    // Use this for initialization
+    void Start()
+    {
         originalPosition = transform.localPosition;
-	}
-	
+    }
+
     public void QuestionBlockBounce()
     {
         if (canBounce)
@@ -24,11 +26,6 @@ public class QuestionBlock : MonoBehaviour {
         }
     }
 
-    // Update is called once per frame
-    void Update () {
-		
-	}
-
     IEnumerator Bounce()
     {
         while (true)
@@ -37,6 +34,8 @@ public class QuestionBlock : MonoBehaviour {
                                                    transform.localPosition.y + bounceSpeed * Time.deltaTime);
             if (transform.localPosition.y >= originalPosition.y + bounceHeight)
             {
+                door = new Vector2(10.63483f, 0.5251937f);
+                Instantiate(monsterPrefab, door, transform.rotation);
                 break;
             }
             yield return null;
