@@ -28,7 +28,8 @@ public class Bridge : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         if (exist) {
-            if (player.transform.position.x > (bridgeActivator.bounds.center.x - bridgeActivator.bounds.size.x/2))
+            if (player.transform.position.x > (bridgeActivator.bounds.center.x - bridgeActivator.bounds.size.x/2) &&
+                player.transform.position.x - bridgeActivator.bounds.center.x + bridgeActivator.bounds.size.x / 2 < 5)
             {
                 BridgeExplosion();
                 exist = false;

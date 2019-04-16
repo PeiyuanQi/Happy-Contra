@@ -34,7 +34,7 @@ public class QuestionBlock : MonoBehaviour {
                                                    transform.localPosition.y + bounceSpeed * Time.deltaTime);
             if (transform.localPosition.y >= originalPosition.y + bounceHeight)
             {
-                door = new Vector2(10.53823f, 0.5654256f);
+                door = new Vector2(-8.53823f, 0.5654256f);
                 Instantiate(monsterPrefab, door, transform.rotation);
                 break;
             }
