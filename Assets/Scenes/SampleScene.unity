@@ -682,7 +682,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.004837036, y: -0.12107921}
+  m_Offset: {x: 0.008522034, y: -0.12107921}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -693,7 +693,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9515686, y: 0.060424328}
+  m_Size: {x: 0.9589386, y: 0.060424328}
   m_EdgeRadius: 0
 --- !u!1001 &89635646
 Prefab:
@@ -2039,7 +2039,7 @@ Prefab:
     - target: {fileID: 61100169377055436, guid: 48dff095b754c43dd8d3d4086faf9796,
         type: 2}
       propertyPath: m_Offset.x
-      value: 0.007217407
+      value: 0.02684784
       objectReference: {fileID: 0}
     - target: {fileID: 61100169377055436, guid: 48dff095b754c43dd8d3d4086faf9796,
         type: 2}
@@ -2049,7 +2049,7 @@ Prefab:
     - target: {fileID: 61100169377055436, guid: 48dff095b754c43dd8d3d4086faf9796,
         type: 2}
       propertyPath: m_Size.x
-      value: 3.8544617
+      value: 3.8152008
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48dff095b754c43dd8d3d4086faf9796, type: 2}
@@ -2112,7 +2112,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 2.230881, y: 2.34}
+  m_Size: {x: 1.9312482, y: 2.34}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2125,7 +2125,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 314800459}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 215.132, y: -5.7, z: 0}
+  m_LocalPosition: {x: 214.398, y: -5.7, z: 0}
   m_LocalScale: {x: 4.901528, y: 4.901528, z: 4.901528}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2143,18 +2143,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.05303812, y: -0.0050883293}
+  m_Offset: {x: -0.11345711, y: -0.0050883293}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0.29999998, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1.13, y: 2.34}
-    newSize: {x: 2.230881, y: 2.34}
+    newSize: {x: 1.9312482, y: 2.34}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.0455284, y: 2.329823}
+  m_Size: {x: 1.9246905, y: 2.329823}
   m_EdgeRadius: 0
 --- !u!50 &314800463
 Rigidbody2D:
@@ -9344,18 +9344,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.10168457, y: -0.039126873}
+  m_Offset: {x: 0.07757568, y: 0.003153801}
   m_SpriteTilingProperty:
-    border: {x: 0.35999998, y: 0.16, z: 0.19999999, w: 0.31}
+    border: {x: 0, y: 0.04, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.08, y: 1.63}
-    newSize: {x: 20.32601, y: 1.63}
+    oldSize: {x: 1.51, y: 0.98}
+    newSize: {x: 19.572716, y: 0.98}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 19.714935, y: 1.2413473}
+  m_Size: {x: 19.666718, y: 0.98765564}
   m_EdgeRadius: 0
 --- !u!50 &1581073872
 Rigidbody2D:
@@ -9417,7 +9417,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 20.32601, y: 1.63}
+  m_Size: {x: 19.572716, y: 0.98}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -9430,7 +9430,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1581073869}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 222.06, y: 12.65, z: 0}
+  m_LocalPosition: {x: 222.195, y: 12.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -10872,7 +10872,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4962308298572052, guid: 728bec78ad247e04fbde091697f35081, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 185.7
+      value: -6.5
       objectReference: {fileID: 0}
     - target: {fileID: 4962308298572052, guid: 728bec78ad247e04fbde091697f35081, type: 2}
       propertyPath: m_LocalPosition.y
