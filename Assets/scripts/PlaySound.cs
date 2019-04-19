@@ -62,8 +62,8 @@ public class PlaySound : MonoBehaviour {
     {
         return enableExplode;
     }
-    public void UnsetEnableExplode()
+    public void SetEnableExplode(bool enabled)
     {
-        enableExplode = false;
+        enableExplode = enabled;
     }
 }

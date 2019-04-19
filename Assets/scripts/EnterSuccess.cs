@@ -20,7 +20,12 @@ public class EnterSuccess : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == "Player")
-        SceneManager.LoadScene("SuccessScene");
+        {
+            GameObject sound = GameObject.Find("Sound");
+            PlaySound play = sound.GetComponent<PlaySound>();
+            play.SetEnableExplode(true);
+            SceneManager.LoadScene("SuccessScene");
+        }
     }
 
 

@@ -29,7 +29,7 @@ public class SavingPointFlag : MonoBehaviour {
             animator.SetBool("saved", true);
             GameObject sound = GameObject.Find("Sound");
             PlaySound play = sound.GetComponent<PlaySound>();
-            play.UnsetEnableExplode();
+            play.SetEnableExplode(false);
         }
     }
 }
