@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class SceneControl : MonoBehaviour {
     public Text lifes;
-    private static int numLifes=3;
+    public static int numLifes=3;
 	// Use this for initialization
 	void Start () {
         StartCoroutine("ShowScene");
@@ -22,6 +22,11 @@ public class SceneControl : MonoBehaviour {
         GameObject sound = GameObject.Find("Sound");
         PlaySound play = sound.GetComponent<PlaySound>();
         play.PlayDie();
+        if(PlayerPrefs.GetInt("life") == 3)
+        {
+            numLifes = 3;
+            PlayerPrefs.DeleteKey("life");
+        }
         numLifes--;
         lifes.text = " : " + numLifes.ToString();
         yield return new WaitForSeconds(2);

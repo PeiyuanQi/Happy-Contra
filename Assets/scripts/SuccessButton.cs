@@ -25,6 +25,7 @@ public class SuccessButton : MonoBehaviour {
     public void OnSuccessReplayClick()
     {
         PlayerMove.ResetSavingPoint();
+        PlayerPrefs.SetInt("life", 3);
         SceneManager.LoadScene("SampleScene");
     }
 }
