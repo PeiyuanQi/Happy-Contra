@@ -277,9 +277,13 @@ public class PlayerMove : MonoBehaviour {
         {
             //hasDied = true;
         }
-        else if (collision.gameObject.tag == "Enemy")
+        else if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "Lava")
         {
             hasDied = true;
+        }
+        else if (collision.gameObject.tag == "Tunnel")
+        {
+            isGround = false;
         }
     }
     void OnCollisionExit2D(Collision2D collision)

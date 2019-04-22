@@ -18,6 +18,8 @@ TagManager:
   - Turret
   - Trampoline
   - SavingPoint
+  - Tunnel
+  - Lava
   layers:
   - Default
   - TransparentFX
