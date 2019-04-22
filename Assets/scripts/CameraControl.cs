@@ -30,7 +30,7 @@ public class CameraControl : MonoBehaviour {
         {
             float x;
             float y;
-            if (player.transform.position.y > 9) y = player.transform.position.y - cameraEdgeY + 4 ;
+            if (player.transform.position.y > 9) y = player.transform.position.y - 3;
             else y = Mathf.Clamp(player.transform.position.y + CameraCenterVerticalOffset, ymin, ymax);
             x = Mathf.Clamp(player.transform.position.x, xmin, xmax);
             gameObject.transform.position = new Vector3(x, y, gameObject.transform.position.z);
