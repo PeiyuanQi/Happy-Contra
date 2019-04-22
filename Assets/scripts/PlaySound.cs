@@ -25,36 +25,42 @@ public class PlaySound : MonoBehaviour {
     public void PlayHitEnemy()
     {
         music.clip = hitenemy;
+        music.volume = 1f;
         music.Play();
         //Debug.Log("PlayHitEnemy");
     }
     public void PlayHitBox()
     {
         music.clip = hitbox;
+        music.volume = 1f;
         music.Play();
         //Debug.Log("PlayHitBox");
     }
     public void PlayShoot()
     {
         music.clip = shoot;
+        music.volume = 0.4f;
         music.Play();
         //Debug.Log("PlayHitBox");
     }
     public void PlayJump()
     {
         music.clip = jump;
+        music.volume = 1f;
         music.Play();
         //Debug.Log("PlayHitBox");
     }
     public void PlayDie()
     {
         music.clip = die;
+        music.volume = 1f;
         music.Play();
         //Debug.Log("PlayDie");
     }
     public void PlayExplode()
     {
         music.clip = explode;
+        music.volume = 1f;
         music.Play();
         //Debug.Log("PlayExplode");
     }
