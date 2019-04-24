@@ -4331,17 +4331,17 @@ Prefab:
     - target: {fileID: 61100169377055436, guid: 48dff095b754c43dd8d3d4086faf9796,
         type: 2}
       propertyPath: m_Offset.x
-      value: 0.002401352
+      value: -0.015541077
       objectReference: {fileID: 0}
     - target: {fileID: 61100169377055436, guid: 48dff095b754c43dd8d3d4086faf9796,
         type: 2}
       propertyPath: m_SpriteTilingProperty.newSize.x
-      value: 3.8559258
+      value: 2.2965238
       objectReference: {fileID: 0}
     - target: {fileID: 61100169377055436, guid: 48dff095b754c43dd8d3d4086faf9796,
         type: 2}
       propertyPath: m_Size.x
-      value: 3.8607597
+      value: 2.3890533
       objectReference: {fileID: 0}
     - target: {fileID: 1269408190091948, guid: 48dff095b754c43dd8d3d4086faf9796, type: 2}
       propertyPath: m_Name
