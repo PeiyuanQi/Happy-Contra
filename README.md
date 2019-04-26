@@ -1,5 +1,7 @@
 # Happy Contra - An iOS Mobile Game
 
+Test URL: https://testflight.apple.com/join/7tZW5CLJ
+
 #### Team Imanok
 
 ## Repo Hierachy
